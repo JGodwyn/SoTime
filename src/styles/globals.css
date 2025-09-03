@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Phudu:wght@400;500;600&family=Mozilla+Headline:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        /* Typography CSS Variables */
+        --display-lg: 83px;
+        --display-md: 67px;
+        --display-sm: 53px;
+        --heading-lg: 43px;
+        --heading-md: 34px;
+        --heading-sm: 27px;
+        --title-lg: 22px;
+        --title-md: 17px;
+        --title-sm: 14px;
+        --body-lg: 17px;
+        --body-lg-bold: 17px;
+        --body-md: 14px;
+        --body-md-bold: 14px;
+        --body-sm: 9px;
+        --body-sm-bold: 9px;
+        --btn-lg: 14px;
+        --btn-sm: 10px;
+        --link: 14px;
+        --sublines: 10px;
+
+        /* Default dark theme (Night900 background) */
+        --background: 240 10% 4%;
+        /* night900 */
+        --foreground: 0 0% 100%;
+        /* night0 */
+
+        /* Card & Popover */
+        --card: 240 10% 4%;
+        /* night900 */
+        --card-foreground: 0 0% 100%;
+        /* night0 */
+        --popover: 240 10% 4%;
+        /* night900 */
+        --popover-foreground: 0 0% 100%;
+        /* night0 */
+
+        /* Primary Colors - Pumpkin */
+        --primary: 20 100% 50%;
+        /* pumpkin500 */
+        --primary-foreground: 0 0% 100%;
+        /* night0 */
+
+        /* Secondary Colors - Dodger */
+        --secondary: 205 100% 50%;
+        /* dodger400 */
+        --secondary-foreground: 0 0% 100%;
+        /* night0 */
+
+        /* Muted Colors */
+        --muted: 227 8% 22%;
+        /* night500 */
+        --muted-foreground: 225 8% 90%;
+        /* night50 */
+
+        /* Accent Colors */
+        --accent: 205 100% 50%;
+        /* dodger400 */
+        --accent-foreground: 0 0% 100%;
+        /* night0 */
+
+        /* Destructive Colors */
+        --destructive: 0 84% 60%;
+        /* Keeping red for errors */
+        --destructive-foreground: 0 0% 100%;
+        /* night0 */
+
+        /* Border & Input */
+        --border: 227 8% 22%;
+        /* night500 */
+        --input: 227 8% 22%;
+        /* night500 */
+        --ring: 20 100% 50%;
+        /* pumpkin500 */
+
+        /* Radius */
+        --radius: 0.5rem;
+    }
+
+    .light {
+        /* Light mode overrides */
+        --background: 0 0% 100%;
+        /* night0 */
+        --foreground: 227 8% 22%;
+        /* night500 */
+
+        --card: 0 0% 100%;
+        /* night0 */
+        --card-foreground: 227 8% 22%;
+        /* night500 */
+        --popover: 0 0% 100%;
+        /* night0 */
+        --popover-foreground: 227 8% 22%;
+        /* night500 */
+
+        --primary: 20 100% 50%;
+        /* pumpkin500 */
+        --primary-foreground: 0 0% 100%;
+        /* night0 */
+
+        --secondary: 205 100% 50%;
+        /* dodger400 */
+        --secondary-foreground: 0 0% 100%;
+        /* night0 */
+
+        --muted: 225 8% 90%;
+        /* night50 */
+        --muted-foreground: 227 8% 22%;
+        /* night500 */
+
+        --accent: 205 100% 50%;
+        /* dodger400 */
+        --accent-foreground: 0 0% 100%;
+        /* night0 */
+
+        --destructive: 0 84% 60%;
+        --destructive-foreground: 0 0% 100%;
+
+        --border: 225 8% 90%;
+        /* night50 */
+        --input: 225 8% 90%;
+        /* night50 */
+        --ring: 20 100% 50%;
+        /* pumpkin500 */
+    }
+
+    .dark {
+        /* Dark mode (default) */
+        --background: 240 10% 4%;
+        /* night900 */
+        --foreground: 0 0% 100%;
+        /* night0 */
+
+        --card: 240 10% 4%;
+        /* night900 */
+        --card-foreground: 0 0% 100%;
+        /* night0 */
+        --popover: 240 10% 4%;
+        /* night900 */
+        --popover-foreground: 0 0% 100%;
+        /* night0 */
+
+        --primary: 20 100% 50%;
+        /* pumpkin500 */
+        --primary-foreground: 0 0% 100%;
+        /* night0 */
+
+        --secondary: 205 100% 50%;
+        /* dodger400 */
+        --secondary-foreground: 0 0% 100%;
+        /* night0 */
+
+        --muted: 227 8% 22%;
+        /* night500 */
+        --muted-foreground: 225 8% 90%;
+        /* night50 */
+
+        --accent: 205 100% 50%;
+        /* dodger400 */
+        --accent-foreground: 0 0% 100%;
+        /* night0 */
+
+        --destructive: 0 84% 60%;
+        --destructive-foreground: 0 0% 100%;
+
+        --border: 227 8% 22%;
+        /* night500 */
+        --input: 227 8% 22%;
+        /* night500 */
+        --ring: 20 100% 50%;
+        /* pumpkin500 */
+    }
+}
+
+@layer base {
+    * {
+        @apply border-border;
+    }
+
+    body {
+        @apply bg-background text-foreground;
+        font-family: 'Mozilla Headline', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+
+    /* Typography utility classes */
+    .text-display-lg {
+        font-size: var(--display-lg);
+        font-family: 'Phudu', sans-serif;
+        font-weight: 600;
+        line-height: 88px;
+        letter-spacing: 0px;
+    }
+
+    .text-display-md {
+        font-size: var(--display-md);
+        font-family: 'Phudu', sans-serif;
+        font-weight: 600;
+        line-height: 72px;
+        letter-spacing: 0px;
+    }
+
+    .text-display-sm {
+        font-size: var(--display-sm);
+        font-family: 'Phudu', sans-serif;
+        font-weight: 600;
+        line-height: 56px;
+        letter-spacing: 0px;
+    }
+
+    .text-heading-lg {
+        font-size: var(--heading-lg);
+        font-family: 'Phudu', sans-serif;
+        font-weight: 600;
+        line-height: 48px;
+        letter-spacing: 0px;
+    }
+
+    .text-heading-md {
+        font-size: var(--heading-md);
+        font-family: 'Phudu', sans-serif;
+        font-weight: 600;
+        line-height: 40px;
+        letter-spacing: 0px;
+    }
+
+    .text-heading-sm {
+        font-size: var(--heading-sm);
+        font-family: 'Phudu', sans-serif;
+        font-weight: 600;
+        line-height: 32px;
+        letter-spacing: 0px;
+    }
+
+    .text-title-lg {
+        font-size: var(--title-lg);
+        font-family: 'Phudu', sans-serif;
+        font-weight: 600;
+        line-height: 28px;
+        letter-spacing: 0px;
+    }
+
+    .text-title-md {
+        font-size: var(--title-md);
+        font-family: 'Phudu', sans-serif;
+        font-weight: 600;
+        line-height: 24px;
+        letter-spacing: 0px;
+    }
+
+    .text-title-sm {
+        font-size: var(--title-sm);
+        font-family: 'Phudu', sans-serif;
+        font-weight: 600;
+        line-height: 20px;
+        letter-spacing: 0px;
+    }
+
+    .text-body-lg {
+        font-size: var(--body-lg);
+        font-family: 'Mozilla Headline', sans-serif;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0px;
+    }
+
+    .text-body-lg-bold {
+        font-size: var(--body-lg-bold);
+        font-family: 'Mozilla Headline', sans-serif;
+        font-weight: 600;
+        line-height: 24px;
+        letter-spacing: 0px;
+    }
+
+    .text-body-md {
+        font-size: var(--body-md);
+        font-family: 'Mozilla Headline', sans-serif;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0px;
+    }
+
+    .text-body-md-bold {
+        font-size: var(--body-md-bold);
+        font-family: 'Mozilla Headline', sans-serif;
+        font-weight: 600;
+        line-height: 20px;
+        letter-spacing: 0px;
+    }
+
+    .text-body-sm {
+        font-size: var(--body-sm);
+        font-family: 'Mozilla Headline', sans-serif;
+        font-weight: 400;
+        line-height: 12px;
+        letter-spacing: 0px;
+    }
+
+    .text-body-sm-bold {
+        font-size: var(--body-sm-bold);
+        font-family: 'Mozilla Headline', sans-serif;
+        font-weight: 500;
+        line-height: 12px;
+        letter-spacing: 0px;
+    }
+
+    .text-btn-lg {
+        font-size: var(--btn-lg);
+        font-family: 'Phudu', sans-serif;
+        font-weight: 500;
+        line-height: 20px;
+        letter-spacing: 0px;
+    }
+
+    .text-btn-sm {
+        font-size: var(--btn-sm);
+        font-family: 'Phudu', sans-serif;
+        font-weight: 500;
+        line-height: 16px;
+        letter-spacing: 0px;
+    }
+
+    .text-link {
+        font-size: var(--link);
+        font-family: 'Mozilla Headline', sans-serif;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0px;
+    }
+
+    .text-sublines {
+        font-size: var(--sublines);
+        font-family: 'Phudu', sans-serif;
+        font-weight: 600;
+        line-height: 12px;
+        letter-spacing: 0px;
+    }
+}

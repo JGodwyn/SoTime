@@ -1,0 +1,218 @@
+{
+    "framework": "shadcn",
+    "version": "1.0.0",
+    "generatedAt": "2025-09-03T06:31:00.705Z",
+    "tokens": {
+        "typography": {
+            "display-lg": {
+                "value": "83px Phudu",
+                "type": "typography",
+                "description": "",
+                "fontSize": "83px",
+                "fontFamily": "Phudu",
+                "fontWeight": "SemiBold",
+                "letterSpacing": "0px",
+                "lineHeight": "88pixels",
+                "css": "var(--display-lg)"
+            },
+            "display-md": {
+                "value": "67px Phudu",
+                "type": "typography",
+                "description": "",
+                "fontSize": "67px",
+                "fontFamily": "Phudu",
+                "fontWeight": "SemiBold",
+                "letterSpacing": "0px",
+                "lineHeight": "72pixels",
+                "css": "var(--display-md)"
+            },
+            "display-sm": {
+                "value": "53px Phudu",
+                "type": "typography",
+                "description": "",
+                "fontSize": "53px",
+                "fontFamily": "Phudu",
+                "fontWeight": "SemiBold",
+                "letterSpacing": "0px",
+                "lineHeight": "56pixels",
+                "css": "var(--display-sm)"
+            },
+            "heading-lg": {
+                "value": "43px Phudu",
+                "type": "typography",
+                "description": "",
+                "fontSize": "43px",
+                "fontFamily": "Phudu",
+                "fontWeight": "SemiBold",
+                "letterSpacing": "0px",
+                "lineHeight": "48pixels",
+                "css": "var(--heading-lg)"
+            },
+            "heading-md": {
+                "value": "34px Phudu",
+                "type": "typography",
+                "description": "",
+                "fontSize": "34px",
+                "fontFamily": "Phudu",
+                "fontWeight": "SemiBold",
+                "letterSpacing": "0px",
+                "lineHeight": "40pixels",
+                "css": "var(--heading-md)"
+            },
+            "heading-sm": {
+                "value": "27px Phudu",
+                "type": "typography",
+                "description": "",
+                "fontSize": "27px",
+                "fontFamily": "Phudu",
+                "fontWeight": "SemiBold",
+                "letterSpacing": "0px",
+                "lineHeight": "32pixels",
+                "css": "var(--heading-sm)"
+            },
+            "title-lg": {
+                "value": "22px Phudu",
+                "type": "typography",
+                "description": "",
+                "fontSize": "22px",
+                "fontFamily": "Phudu",
+                "fontWeight": "SemiBold",
+                "letterSpacing": "0px",
+                "lineHeight": "28pixels",
+                "css": "var(--title-lg)"
+            },
+            "title-md": {
+                "value": "17px Phudu",
+                "type": "typography",
+                "description": "",
+                "fontSize": "17px",
+                "fontFamily": "Phudu",
+                "fontWeight": "SemiBold",
+                "letterSpacing": "0px",
+                "lineHeight": "24pixels",
+                "css": "var(--title-md)"
+            },
+            "title-sm": {
+                "value": "14px Phudu",
+                "type": "typography",
+                "description": "",
+                "fontSize": "14px",
+                "fontFamily": "Phudu",
+                "fontWeight": "SemiBold",
+                "letterSpacing": "0px",
+                "lineHeight": "20pixels",
+                "css": "var(--title-sm)"
+            },
+            "body-lg": {
+                "value": "17px Mozilla Headline",
+                "type": "typography",
+                "description": "",
+                "fontSize": "17px",
+                "fontFamily": "Mozilla Headline",
+                "fontWeight": "Regular",
+                "letterSpacing": "0px",
+                "lineHeight": "24pixels",
+                "css": "var(--body-lg)"
+            },
+            "body-lg-bold": {
+                "value": "17px Mozilla Headline",
+                "type": "typography",
+                "description": "",
+                "fontSize": "17px",
+                "fontFamily": "Mozilla Headline",
+                "fontWeight": "SemiBold",
+                "letterSpacing": "0px",
+                "lineHeight": "24pixels",
+                "css": "var(--body-lg-bold)"
+            },
+            "body-md": {
+                "value": "14px Mozilla Headline",
+                "type": "typography",
+                "description": "",
+                "fontSize": "14px",
+                "fontFamily": "Mozilla Headline",
+                "fontWeight": "Regular",
+                "letterSpacing": "0px",
+                "lineHeight": "20pixels",
+                "css": "var(--body-md)"
+            },
+            "body-md-bold": {
+                "value": "14px Mozilla Headline",
+                "type": "typography",
+                "description": "",
+                "fontSize": "14px",
+                "fontFamily": "Mozilla Headline",
+                "fontWeight": "SemiBold",
+                "letterSpacing": "0px",
+                "lineHeight": "20pixels",
+                "css": "var(--body-md-bold)"
+            },
+            "body-sm": {
+                "value": "9px Mozilla Headline",
+                "type": "typography",
+                "description": "",
+                "fontSize": "9px",
+                "fontFamily": "Mozilla Headline",
+                "fontWeight": "Regular",
+                "letterSpacing": "0px",
+                "lineHeight": "12pixels",
+                "css": "var(--body-sm)"
+            },
+            "body-sm-bold": {
+                "value": "9px Mozilla Headline",
+                "type": "typography",
+                "description": "",
+                "fontSize": "9px",
+                "fontFamily": "Mozilla Headline",
+                "fontWeight": "Medium",
+                "letterSpacing": "0px",
+                "lineHeight": "12pixels",
+                "css": "var(--body-sm-bold)"
+            },
+            "btn-lg": {
+                "value": "14px Phudu",
+                "type": "typography",
+                "description": "",
+                "fontSize": "14px",
+                "fontFamily": "Phudu",
+                "fontWeight": "Medium",
+                "letterSpacing": "0px",
+                "lineHeight": "20pixels",
+                "css": "var(--btn-lg)"
+            },
+            "btn-sm": {
+                "value": "10px Phudu",
+                "type": "typography",
+                "description": "",
+                "fontSize": "10px",
+                "fontFamily": "Phudu",
+                "fontWeight": "Medium",
+                "letterSpacing": "0px",
+                "lineHeight": "16pixels",
+                "css": "var(--btn-sm)"
+            },
+            "link": {
+                "value": "14px Mozilla Headline",
+                "type": "typography",
+                "description": "",
+                "fontSize": "14px",
+                "fontFamily": "Mozilla Headline",
+                "fontWeight": "Regular",
+                "letterSpacing": "0px",
+                "lineHeight": "20pixels",
+                "css": "var(--link)"
+            },
+            "sublines": {
+                "value": "10px Phudu",
+                "type": "typography",
+                "description": "",
+                "fontSize": "10px",
+                "fontFamily": "Phudu",
+                "fontWeight": "SemiBold",
+                "letterSpacing": "0px",
+                "lineHeight": "12pixels",
+                "css": "var(--sublines)"
+            }
+        }
+    }
+}

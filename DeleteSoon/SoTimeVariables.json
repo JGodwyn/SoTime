@@ -1,0 +1,731 @@
+{
+  "framework": "shadcn",
+  "version": "1.0.0",
+  "generatedAt": "2025-09-02T21:31:49.815Z",
+  "tokens": {
+    "colors": {
+      "pumpkin0": {
+        "value": "#fff1eb",
+        "type": "color",
+        "description": "",
+        "collection": "BrandColors",
+        "variableType": "COLOR",
+        "scopes": [
+          "ALL_SCOPES"
+        ],
+        "hex": "#fff1eb",
+        "css": "hsl(var(--pumpkin0))",
+        "hsl": {
+          "h": 18,
+          "s": 100,
+          "l": 96
+        },
+        "hslValue": "18 100% 96%",
+        "rootVar": "--pumpkin0"
+      },
+      "pumpkin50": {
+        "value": "#ffe5d4",
+        "type": "color",
+        "description": "",
+        "collection": "BrandColors",
+        "variableType": "COLOR",
+        "scopes": [
+          "ALL_SCOPES"
+        ],
+        "hex": "#ffe5d4",
+        "css": "hsl(var(--pumpkin50))",
+        "hsl": {
+          "h": 24,
+          "s": 100,
+          "l": 92
+        },
+        "hslValue": "24 100% 92%",
+        "rootVar": "--pumpkin50"
+      },
+      "pumpkin100": {
+        "value": "#ffd8ba",
+        "type": "color",
+        "description": "",
+        "collection": "BrandColors",
+        "variableType": "COLOR",
+        "scopes": [
+          "ALL_SCOPES"
+        ],
+        "hex": "#ffd8ba",
+        "css": "hsl(var(--pumpkin100))",
+        "hsl": {
+          "h": 26,
+          "s": 100,
+          "l": 86
+        },
+        "hslValue": "26 100% 86%",
+        "rootVar": "--pumpkin100"
+      },
+      "pumpkin200": {
+        "value": "#ffb584",
+        "type": "color",
+        "description": "",
+        "collection": "BrandColors",
+        "variableType": "COLOR",
+        "scopes": [
+          "ALL_SCOPES"
+        ],
+        "hex": "#ffb584",
+        "css": "hsl(var(--pumpkin200))",
+        "hsl": {
+          "h": 24,
+          "s": 100,
+          "l": 76
+        },
+        "hslValue": "24 100% 76%",
+        "rootVar": "--pumpkin200"
+      },
+      "pumpkin300": {
+        "value": "#ff9250",
+        "type": "color",
+        "description": "",
+        "collection": "BrandColors",
+        "variableType": "COLOR",
+        "scopes": [
+          "ALL_SCOPES"
+        ],
+        "hex": "#ff9250",
+        "css": "hsl(var(--pumpkin300))",
+        "hsl": {
+          "h": 23,
+          "s": 100,
+          "l": 66
+        },
+        "hslValue": "23 100% 66%",
+        "rootVar": "--pumpkin300"
+      },
+      "pumpkin400": {
+        "value": "#ff7124",
+        "type": "color",
+        "description": "",
+        "collection": "BrandColors",
+        "variableType": "COLOR",
+        "scopes": [
+          "ALL_SCOPES"
+        ],
+        "hex": "#ff7124",
+        "css": "hsl(var(--pumpkin400))",
+        "hsl": {
+          "h": 21,
+          "s": 100,
+          "l": 57
+        },
+        "hslValue": "21 100% 57%",
+        "rootVar": "--pumpkin400"
+      },
+      "pumpkin500": {
+        "value": "#ff5500",
+        "type": "color",
+        "description": "",
+        "collection": "BrandColors",
+        "variableType": "COLOR",
+        "scopes": [
+          "ALL_SCOPES"
+        ],
+        "hex": "#ff5500",
+        "css": "hsl(var(--pumpkin500))",
+        "hsl": {
+          "h": 20,
+          "s": 100,
+          "l": 50
+        },
+        "hslValue": "20 100% 50%",
+        "rootVar": "--pumpkin500"
+      },
+      "pumpkin600": {
+        "value": "#d64700",
+        "type": "color",
+        "description": "",
+        "collection": "BrandColors",
+        "variableType": "COLOR",
+        "scopes": [
+          "ALL_SCOPES"
+        ],
+        "hex": "#d64700",
+        "css": "hsl(var(--pumpkin600))",
+        "hsl": {
+          "h": 20,
+          "s": 100,
+          "l": 42
+        },
+        "hslValue": "20 100% 42%",
+        "rootVar": "--pumpkin600"
+      },
+      "pumpkin700": {
+        "value": "#9e3500",
+        "type": "color",
+        "description": "",
+        "collection": "BrandColors",
+        "variableType": "COLOR",
+        "scopes": [
+          "ALL_SCOPES"
+        ],
+        "hex": "#9e3500",
+        "css": "hsl(var(--pumpkin700))",
+        "hsl": {
+          "h": 20,
+          "s": 100,
+          "l": 31
+        },
+        "hslValue": "20 100% 31%",
+        "rootVar": "--pumpkin700"
+      },
+      "pumpkin800": {
+        "value": "#702500",
+        "type": "color",
+        "description": "",
+        "collection": "BrandColors",
+        "variableType": "COLOR",
+        "scopes": [
+          "ALL_SCOPES"
+        ],
+        "hex": "#702500",
+        "css": "hsl(var(--pumpkin800))",
+        "hsl": {
+          "h": 20,
+          "s": 100,
+          "l": 22
+        },
+        "hslValue": "20 100% 22%",
+        "rootVar": "--pumpkin800"
+      },
+      "pumpkin900": {
+        "value": "#471800",
+        "type": "color",
+        "description": "",
+        "collection": "BrandColors",
+        "variableType": "COLOR",
+        "scopes": [
+          "ALL_SCOPES"
+        ],
+        "hex": "#471800",
+        "css": "hsl(var(--pumpkin900))",
+        "hsl": {
+          "h": 20,
+          "s": 100,
+          "l": 14
+        },
+        "hslValue": "20 100% 14%",
+        "rootVar": "--pumpkin900"
+      },
+      "pumpkin950": {
+        "value": "#290e00",
+        "type": "color",
+        "description": "",
+        "collection": "BrandColors",
+        "variableType": "COLOR",
+        "scopes": [
+          "ALL_SCOPES"
+        ],
+        "hex": "#290e00",
+        "css": "hsl(var(--pumpkin950))",
+        "hsl": {
+          "h": 20,
+          "s": 100,
+          "l": 8
+        },
+        "hslValue": "20 100% 8%",
+        "rootVar": "--pumpkin950"
+      },
+      "pumpkin1000": {
+        "value": "#190800",
+        "type": "color",
+        "description": "",
+        "collection": "BrandColors",
+        "variableType": "COLOR",
+        "scopes": [
+          "ALL_SCOPES"
+        ],
+        "hex": "#190800",
+        "css": "hsl(var(--pumpkin1000))",
+        "hsl": {
+          "h": 19,
+          "s": 100,
+          "l": 5
+        },
+        "hslValue": "19 100% 5%",
+        "rootVar": "--pumpkin1000"
+      },
+      "dodger0": {
+        "value": "#ebf7ff",
+        "type": "color",
+        "description": "",
+        "collection": "BrandColors",
+        "variableType": "COLOR",
+        "scopes": [
+          "ALL_SCOPES"
+        ],
+        "hex": "#ebf7ff",
+        "css": "hsl(var(--dodger0))",
+        "hsl": {
+          "h": 204,
+          "s": 100,
+          "l": 96
+        },
+        "hslValue": "204 100% 96%",
+        "rootVar": "--dodger0"
+      },
+      "dodger50": {
+        "value": "#cbeeff",
+        "type": "color",
+        "description": "",
+        "collection": "BrandColors",
+        "variableType": "COLOR",
+        "scopes": [
+          "ALL_SCOPES"
+        ],
+        "hex": "#cbeeff",
+        "css": "hsl(var(--dodger50))",
+        "hsl": {
+          "h": 200,
+          "s": 100,
+          "l": 90
+        },
+        "hslValue": "200 100% 90%",
+        "rootVar": "--dodger50"
+      },
+      "dodger100": {
+        "value": "#a9e4ff",
+        "type": "color",
+        "description": "",
+        "collection": "BrandColors",
+        "variableType": "COLOR",
+        "scopes": [
+          "ALL_SCOPES"
+        ],
+        "hex": "#a9e4ff",
+        "css": "hsl(var(--dodger100))",
+        "hsl": {
+          "h": 199,
+          "s": 100,
+          "l": 83
+        },
+        "hslValue": "199 100% 83%",
+        "rootVar": "--dodger100"
+      },
+      "dodger200": {
+        "value": "#6bcbff",
+        "type": "color",
+        "description": "",
+        "collection": "BrandColors",
+        "variableType": "COLOR",
+        "scopes": [
+          "ALL_SCOPES"
+        ],
+        "hex": "#6bcbff",
+        "css": "hsl(var(--dodger200))",
+        "hsl": {
+          "h": 201,
+          "s": 100,
+          "l": 71
+        },
+        "hslValue": "201 100% 71%",
+        "rootVar": "--dodger200"
+      },
+      "dodger300": {
+        "value": "#31b0ff",
+        "type": "color",
+        "description": "",
+        "collection": "BrandColors",
+        "variableType": "COLOR",
+        "scopes": [
+          "ALL_SCOPES"
+        ],
+        "hex": "#31b0ff",
+        "css": "hsl(var(--dodger300))",
+        "hsl": {
+          "h": 203,
+          "s": 100,
+          "l": 60
+        },
+        "hslValue": "203 100% 60%",
+        "rootVar": "--dodger300"
+      },
+      "dodger400": {
+        "value": "#0095ff",
+        "type": "color",
+        "description": "",
+        "collection": "BrandColors",
+        "variableType": "COLOR",
+        "scopes": [
+          "ALL_SCOPES"
+        ],
+        "hex": "#0095ff",
+        "css": "hsl(var(--dodger400))",
+        "hsl": {
+          "h": 205,
+          "s": 100,
+          "l": 50
+        },
+        "hslValue": "205 100% 50%",
+        "rootVar": "--dodger400"
+      },
+      "dodger500": {
+        "value": "#0082df",
+        "type": "color",
+        "description": "",
+        "collection": "BrandColors",
+        "variableType": "COLOR",
+        "scopes": [
+          "ALL_SCOPES"
+        ],
+        "hex": "#0082df",
+        "css": "hsl(var(--dodger500))",
+        "hsl": {
+          "h": 205,
+          "s": 100,
+          "l": 44
+        },
+        "hslValue": "205 100% 44%",
+        "rootVar": "--dodger500"
+      },
+      "dodger600": {
+        "value": "#006cb9",
+        "type": "color",
+        "description": "",
+        "collection": "BrandColors",
+        "variableType": "COLOR",
+        "scopes": [
+          "ALL_SCOPES"
+        ],
+        "hex": "#006cb9",
+        "css": "hsl(var(--dodger600))",
+        "hsl": {
+          "h": 205,
+          "s": 100,
+          "l": 36
+        },
+        "hslValue": "205 100% 36%",
+        "rootVar": "--dodger600"
+      },
+      "dodger700": {
+        "value": "#005490",
+        "type": "color",
+        "description": "",
+        "collection": "BrandColors",
+        "variableType": "COLOR",
+        "scopes": [
+          "ALL_SCOPES"
+        ],
+        "hex": "#005490",
+        "css": "hsl(var(--dodger700))",
+        "hsl": {
+          "h": 205,
+          "s": 100,
+          "l": 28
+        },
+        "hslValue": "205 100% 28%",
+        "rootVar": "--dodger700"
+      },
+      "dodger800": {
+        "value": "#00355c",
+        "type": "color",
+        "description": "",
+        "collection": "BrandColors",
+        "variableType": "COLOR",
+        "scopes": [
+          "ALL_SCOPES"
+        ],
+        "hex": "#00355c",
+        "css": "hsl(var(--dodger800))",
+        "hsl": {
+          "h": 205,
+          "s": 100,
+          "l": 18
+        },
+        "hslValue": "205 100% 18%",
+        "rootVar": "--dodger800"
+      },
+      "dodger900": {
+        "value": "#001e33",
+        "type": "color",
+        "description": "",
+        "collection": "BrandColors",
+        "variableType": "COLOR",
+        "scopes": [
+          "ALL_SCOPES"
+        ],
+        "hex": "#001e33",
+        "css": "hsl(var(--dodger900))",
+        "hsl": {
+          "h": 205,
+          "s": 100,
+          "l": 10
+        },
+        "hslValue": "205 100% 10%",
+        "rootVar": "--dodger900"
+      },
+      "dodger950": {
+        "value": "#00111f",
+        "type": "color",
+        "description": "",
+        "collection": "BrandColors",
+        "variableType": "COLOR",
+        "scopes": [
+          "ALL_SCOPES"
+        ],
+        "hex": "#00111f",
+        "css": "hsl(var(--dodger950))",
+        "hsl": {
+          "h": 207,
+          "s": 100,
+          "l": 6
+        },
+        "hslValue": "207 100% 6%",
+        "rootVar": "--dodger950"
+      },
+      "dodger1000": {
+        "value": "#00070d",
+        "type": "color",
+        "description": "",
+        "collection": "BrandColors",
+        "variableType": "COLOR",
+        "scopes": [
+          "ALL_SCOPES"
+        ],
+        "hex": "#00070d",
+        "css": "hsl(var(--dodger1000))",
+        "hsl": {
+          "h": 208,
+          "s": 100,
+          "l": 3
+        },
+        "hslValue": "208 100% 3%",
+        "rootVar": "--dodger1000"
+      },
+      "night0": {
+        "value": "#ffffff",
+        "type": "color",
+        "description": "",
+        "collection": "BrandColors",
+        "variableType": "COLOR",
+        "scopes": [
+          "ALL_SCOPES"
+        ],
+        "hex": "#ffffff",
+        "css": "hsl(var(--night0))",
+        "hsl": {
+          "h": 0,
+          "s": 0,
+          "l": 100
+        },
+        "hslValue": "0 0% 100%",
+        "rootVar": "--night0"
+      },
+      "night50": {
+        "value": "#e3e4e7",
+        "type": "color",
+        "description": "",
+        "collection": "BrandColors",
+        "variableType": "COLOR",
+        "scopes": [
+          "ALL_SCOPES"
+        ],
+        "hex": "#e3e4e7",
+        "css": "hsl(var(--night50))",
+        "hsl": {
+          "h": 225,
+          "s": 8,
+          "l": 90
+        },
+        "hslValue": "225 8% 90%",
+        "rootVar": "--night50"
+      },
+      "night100": {
+        "value": "#c7c9d0",
+        "type": "color",
+        "description": "",
+        "collection": "BrandColors",
+        "variableType": "COLOR",
+        "scopes": [
+          "ALL_SCOPES"
+        ],
+        "hex": "#c7c9d0",
+        "css": "hsl(var(--night100))",
+        "hsl": {
+          "h": 227,
+          "s": 9,
+          "l": 80
+        },
+        "hslValue": "227 9% 80%",
+        "rootVar": "--night100"
+      },
+      "night200": {
+        "value": "#9698a2",
+        "type": "color",
+        "description": "",
+        "collection": "BrandColors",
+        "variableType": "COLOR",
+        "scopes": [
+          "ALL_SCOPES"
+        ],
+        "hex": "#9698a2",
+        "css": "hsl(var(--night200))",
+        "hsl": {
+          "h": 230,
+          "s": 6,
+          "l": 61
+        },
+        "hslValue": "230 6% 61%",
+        "rootVar": "--night200"
+      },
+      "night300": {
+        "value": "#6d6f79",
+        "type": "color",
+        "description": "",
+        "collection": "BrandColors",
+        "variableType": "COLOR",
+        "scopes": [
+          "ALL_SCOPES"
+        ],
+        "hex": "#6d6f79",
+        "css": "hsl(var(--night300))",
+        "hsl": {
+          "h": 230,
+          "s": 5,
+          "l": 45
+        },
+        "hslValue": "230 5% 45%",
+        "rootVar": "--night300"
+      },
+      "night400": {
+        "value": "#4c4e57",
+        "type": "color",
+        "description": "",
+        "collection": "BrandColors",
+        "variableType": "COLOR",
+        "scopes": [
+          "ALL_SCOPES"
+        ],
+        "hex": "#4c4e57",
+        "css": "hsl(var(--night400))",
+        "hsl": {
+          "h": 229,
+          "s": 7,
+          "l": 32
+        },
+        "hslValue": "229 7% 32%",
+        "rootVar": "--night400"
+      },
+      "night500": {
+        "value": "#33353c",
+        "type": "color",
+        "description": "",
+        "collection": "BrandColors",
+        "variableType": "COLOR",
+        "scopes": [
+          "ALL_SCOPES"
+        ],
+        "hex": "#33353c",
+        "css": "hsl(var(--night500))",
+        "hsl": {
+          "h": 227,
+          "s": 8,
+          "l": 22
+        },
+        "hslValue": "227 8% 22%",
+        "rootVar": "--night500"
+      },
+      "night600": {
+        "value": "#212228",
+        "type": "color",
+        "description": "",
+        "collection": "BrandColors",
+        "variableType": "COLOR",
+        "scopes": [
+          "ALL_SCOPES"
+        ],
+        "hex": "#212228",
+        "css": "hsl(var(--night600))",
+        "hsl": {
+          "h": 231,
+          "s": 10,
+          "l": 14
+        },
+        "hslValue": "231 10% 14%",
+        "rootVar": "--night600"
+      },
+      "night700": {
+        "value": "#141519",
+        "type": "color",
+        "description": "",
+        "collection": "BrandColors",
+        "variableType": "COLOR",
+        "scopes": [
+          "ALL_SCOPES"
+        ],
+        "hex": "#141519",
+        "css": "hsl(var(--night700))",
+        "hsl": {
+          "h": 228,
+          "s": 11,
+          "l": 9
+        },
+        "hslValue": "228 11% 9%",
+        "rootVar": "--night700"
+      },
+      "night800": {
+        "value": "#0e0e11",
+        "type": "color",
+        "description": "",
+        "collection": "BrandColors",
+        "variableType": "COLOR",
+        "scopes": [
+          "ALL_SCOPES"
+        ],
+        "hex": "#0e0e11",
+        "css": "hsl(var(--night800))",
+        "hsl": {
+          "h": 240,
+          "s": 10,
+          "l": 6
+        },
+        "hslValue": "240 10% 6%",
+        "rootVar": "--night800"
+      },
+      "night900": {
+        "value": "#0a0a0b",
+        "type": "color",
+        "description": "",
+        "collection": "BrandColors",
+        "variableType": "COLOR",
+        "scopes": [
+          "ALL_SCOPES"
+        ],
+        "hex": "#0a0a0b",
+        "css": "hsl(var(--night900))",
+        "hsl": {
+          "h": 240,
+          "s": 5,
+          "l": 4
+        },
+        "hslValue": "240 5% 4%",
+        "rootVar": "--night900"
+      },
+      "night1000": {
+        "value": "#000000",
+        "type": "color",
+        "description": "",
+        "collection": "BrandColors",
+        "variableType": "COLOR",
+        "scopes": [
+          "ALL_SCOPES"
+        ],
+        "hex": "#000000",
+        "css": "hsl(var(--night1000))",
+        "hsl": {
+          "h": 0,
+          "s": 0,
+          "l": 0
+        },
+        "hslValue": "0 0% 0%",
+        "rootVar": "--night1000"
+      }
+    }
+  }
+}
