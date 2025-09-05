@@ -5,11 +5,11 @@ import { cva, type VariantProps } from "class-variance-authority"
 import { cn } from "@/lib/utils"
 
 const buttonVariants = cva(
-  "inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50",
+  "inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50",
   {
     variants: {
       variant: {
-        default: "bg-primary text-primary-foreground hover:bg-primary/90",
+        default: "bg-pumpkin-500 text-white shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 relative overflow-hidden before:absolute before:inset-0 before:rounded-full before:bg-gradient-radial before:from-[#FF6A00]/0 before:to-[#E52600]/100 before:pointer-events-none",
         destructive:
           "bg-destructive text-destructive-foreground hover:bg-destructive/90",
         outline:
@@ -20,15 +20,15 @@ const buttonVariants = cva(
         link: "text-primary underline-offset-4 hover:underline",
       },
       size: {
-        default: "h-10 px-4 py-2",
-        sm: "h-9 rounded-md px-3",
-        lg: "h-11 rounded-md px-8",
+        sm: "h-6 px-4 text-xs font-semibold tracking-wide",
+        md: "h-8 px-6 text-sm font-semibold tracking-wide",
+        lg: "h-10 px-8 text-base font-semibold tracking-wide",
         icon: "h-10 w-10",
       },
     },
     defaultVariants: {
       variant: "default",
-      size: "default",
+      size: "md",
     },
   }
 )
@@ -44,7 +44,11 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
     const Comp = asChild ? Slot : "button"
     return (
       <Comp
-        className={cn(buttonVariants({ variant, size, className }))}
+        className={cn(
+          buttonVariants({ variant, size, className }), 
+          "rounded-full"
+        )}
+        style={{ position: 'relative', zIndex: 1000000 }}
         ref={ref}
         {...props}
       />

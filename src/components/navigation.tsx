@@ -38,7 +38,7 @@ export function Navigation() {
               </Button>
             </Link>
             <Link href="/auth">
-              <Button size="sm" className="bg-primary hover:bg-primary/90 text-primary-foreground text-btn-sm">
+              <Button size="sm" className="text-btn-sm">
                 Get Started
               </Button>
             </Link>

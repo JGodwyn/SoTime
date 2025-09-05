@@ -12,10 +12,10 @@ export default function Home() {
         </p>
         
         <div className="flex gap-4 justify-center">
-          <Button size="lg" className="px-8 bg-primary hover:bg-primary/90 text-primary-foreground text-btn-lg">
+          <Button size="lg" className="text-btn-lg">
             Get Started
           </Button>
-          <Button variant="outline" size="lg" className="px-8 border-secondary text-secondary hover:bg-secondary hover:text-secondary-foreground text-btn-lg">
+          <Button variant="outline" size="lg" className="border-secondary text-secondary hover:bg-secondary hover:text-secondary-foreground text-btn-lg">
             Learn More
           </Button>
         </div>
