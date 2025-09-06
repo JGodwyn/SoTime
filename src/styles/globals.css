@@ -7,6 +7,9 @@
 @layer base {
     :root {
         /* Typography CSS Variables */
+        --display-3xl: 110px;
+        --display-2xl: 100px;
+        --display-xl: 91px;
         --display-lg: 83px;
         --display-md: 67px;
         --display-sm: 53px;
@@ -191,6 +194,30 @@
     }
 
     /* Typography utility classes */
+    .text-display-3xl {
+        font-size: var(--display-3xl);
+        font-family: 'Phudu', sans-serif;
+        font-weight: 600;
+        line-height: 118px;
+        letter-spacing: 0px;
+    }
+
+    .text-display-2xl {
+        font-size: var(--display-2xl);
+        font-family: 'Phudu', sans-serif;
+        font-weight: 600;
+        line-height: 108px;
+        letter-spacing: 0px;
+    }
+
+    .text-display-xl {
+        font-size: var(--display-xl);
+        font-family: 'Phudu', sans-serif;
+        font-weight: 600;
+        line-height: 96px;
+        letter-spacing: 0px;
+    }
+
     .text-display-lg {
         font-size: var(--display-lg);
         font-family: 'Phudu', sans-serif;

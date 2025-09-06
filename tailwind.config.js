@@ -101,6 +101,30 @@ module.exports = {
             },
             fontSize: {
                 // Display styles - Phudu font, SemiBold weight
+                'display-3xl': [
+                    '110px',
+                    {
+                        lineHeight: '118px',
+                        fontFamily: 'Phudu',
+                        fontWeight: '600',
+                    },
+                ],
+                'display-2xl': [
+                    '100px',
+                    {
+                        lineHeight: '108px',
+                        fontFamily: 'Phudu',
+                        fontWeight: '600',
+                    },
+                ],
+                'display-xl': [
+                    '91px',
+                    {
+                        lineHeight: '96px',
+                        fontFamily: 'Phudu',
+                        fontWeight: '600',
+                    },
+                ],
                 'display-lg': [
                     '83px',
                     {
