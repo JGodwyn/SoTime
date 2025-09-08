@@ -369,4 +369,50 @@
         line-height: 12px;
         letter-spacing: 0px;
     }
+
+    /* Circular vignette effect for text */
+    .text-vignette {
+        background: radial-gradient(ellipse 90% 100% at center,
+                hsl(var(--foreground)) 0%,
+                hsl(var(--foreground)) 30%,
+                transparent 70%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        -webkit-text-fill-color: transparent;
+    }
+
+    /* Stadium light effect */
+    .stadium-light {
+        position: relative;
+    }
+
+    .stadium-light::before,
+    .stadium-light::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        width: 300px;
+        height: 8px;
+        background: linear-gradient(90deg,
+                transparent 0%,
+                rgba(49, 176, 255, 0.8) 10%,
+                #31b0ff 30%,
+                #31b0ff 70%,
+                rgba(49, 176, 255, 0.8) 90%,
+                transparent 100%);
+        border-radius: 4px;
+        transform: translateY(-50%);
+        z-index: 1;
+        filter: blur(2px);
+        box-shadow: 0 0 20px rgba(49, 176, 255, 0.5);
+    }
+
+    .stadium-light::before {
+        left: -350px;
+    }
+
+    .stadium-light::after {
+        right: -350px;
+    }
 }

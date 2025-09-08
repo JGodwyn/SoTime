@@ -1,10 +1,22 @@
 import { Button } from "@/src/components/ui/button"
+import Image from "next/image"
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center p-24 bg-background">
-      <div className="text-center space-y-8">
-        <h1 className="text-display-3xl text-foreground max-w-4xl mx-auto">
+    <main className="flex h-screen flex-col items-center justify-center p-24 bg-background overflow-hidden relative">
+      {/* Stadium Light Background */}
+      <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+        <Image
+          src="/assets/StadiumLight.svg"
+          alt="Stadium Light"
+          width={1440}
+          height={702}
+          className="w-full h-auto opacity-60"
+        />
+      </div>
+      
+      <div className="text-center space-y-6 relative z-10">
+        <h1 className="text-display-3xl max-w-4xl mx-auto text-vignette">
           We help you<br />
           dig up your posts
         </h1>
