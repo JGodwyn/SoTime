@@ -31,8 +31,9 @@
         --sublines: 10px;
 
         /* Default dark theme (Night900 background) */
-        --background: 240 10% 4%;
-        /* night900 */
+        /* change background to Night1000 */
+        --background: 0 0% 0%;
+        /* night1000 */
         --foreground: 0 0% 100%;
         /* night0 */
 

@@ -3,7 +3,7 @@ import Image from "next/image"
 
 export default function Home() {
   return (
-    <main className="flex h-screen flex-col items-center justify-center p-24 bg-background overflow-hidden relative">
+    <main className="flex min-h-[calc(100vh-5rem)] flex-col items-center justify-center p-24 bg-background relative">
       {/* Stadium Light Background */}
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
         <Image
@@ -87,6 +87,30 @@ export default function Home() {
                 height={61}
                 className="absolute w-16 h-16 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20"
               />
+            </div>
+          </div>
+
+          {/* Pills Container */}
+          <div className="flex flex-col items-center justify-center mt-12">
+            {/* "OH, AND THERE'S MORE..." Pill */}
+            <div className="flex items-center gap-3 bg-dodger-300 px-4 py-1 rounded-full z-10">
+              <span className="text-title-lg font-bold text-black uppercase">
+                OH, AND THERE'S MORE...
+              </span>
+              <Image
+                src="/assets/chevron-down-small-fill.svg"
+                alt="Chevron Down"
+                width={20}
+                height={20}
+                className="w-5 h-5"
+              />
+            </div>
+
+            {/* "SCROLL DOWN" Pill */}
+            <div className="flex items-center gap-3 bg-pumpkin-500 px-4 py-1 rounded-full -mt-1 z-0">
+              <span className="text-title-sm font-bold text-white uppercase">
+                SCROLL DOWN
+              </span>
             </div>
           </div>
       </div>
