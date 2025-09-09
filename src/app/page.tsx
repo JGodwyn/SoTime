@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <main className="flex min-h-[calc(100vh-5rem)] flex-col items-center justify-center p-24 bg-background relative">
       {/* Stadium Light Background */}
-      <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+      <div className="absolute inset-0 flex items-start justify-center pointer-events-none -mt-32">
         <Image
           src="/assets/StadiumLight.svg"
           alt="Stadium Light"
