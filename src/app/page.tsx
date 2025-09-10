@@ -11,16 +11,16 @@ export default function Home() {
           alt="Stadium Light"
           width={2452}
           height={1001}
-          className="w-full h-auto opacity-100 brightness-100 stadium-light-mask"
+          className="w-full h-auto opacity-100 brightness-100 stadium-light-mask animate-stadium-light-fade"
         />
       </div>
       
       <div className="text-center space-y-6 relative z-10">
-        <h1 className="text-display-3xl max-w-4xl mx-auto text-vignette">
+        <h1 className="text-display-3xl max-w-4xl mx-auto text-vignette animate-blur-opacity-reveal">
           We help you<br />
           dig up your posts
         </h1>
-        <p className="text-body-lg text-muted-foreground max-w-lg mx-auto">
+        <p className="text-body-lg text-muted-foreground max-w-lg mx-auto animate-opacity-reveal">
           Your posts deserve more than a scroll. Filter, group, and let AI help you organize and see them in a whole new way.
         </p>
         

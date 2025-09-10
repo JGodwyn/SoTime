@@ -3,7 +3,7 @@ import { Button } from "@/src/components/ui/button"
 
 export function Navigation() {
   return (
-    <nav className="sticky top-0 z-50 flex justify-center pt-4">
+    <nav className="sticky top-16 z-50 flex justify-center pt-4 animate-slide-in-from-top">
       <div className="bg-night-700 rounded-full px-2 py-2">
         <div className="flex items-center justify-between w-full min-w-[480px]">
           {/* Left side - SOTIME logo */}

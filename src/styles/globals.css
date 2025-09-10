@@ -396,4 +396,99 @@
                 black 90%,
                 transparent 100%);
     }
+
+    /* Navbar slide-in animation */
+    .animate-slide-in-from-top {
+        animation: slideInFromTop 0.6s ease-out forwards;
+        transform: translateY(-100%);
+    }
+
+    @keyframes slideInFromTop {
+        from {
+            transform: translateY(-100%);
+            opacity: 0;
+            filter: blur(8px);
+        }
+
+        50% {
+            filter: blur(4px);
+        }
+
+        to {
+            transform: translateY(0);
+            opacity: 1;
+            filter: blur(0px);
+        }
+    }
+
+    /* Stadium light fade-in animation */
+    .animate-stadium-light-fade {
+        animation: stadiumLightFade 0.8s ease-out forwards;
+        opacity: 0;
+    }
+
+    @keyframes stadiumLightFade {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    /* Simple fade-in animation for text */
+    .animate-blur-opacity-reveal {
+        animation: textFadeIn 0.5s ease-in forwards;
+        animation-delay: 0.3s;
+        opacity: 0;
+        filter: blur(8px);
+    }
+
+    @keyframes textFadeIn {
+        from {
+            opacity: 0;
+            filter: blur(24px);
+        }
+
+        50% {
+            opacity: 0.25;
+            filter: blur(16px);
+        }
+
+        75% {
+            opacity: 0.75;
+            filter: blur(8px);
+        }
+
+        to {
+            opacity: 1;
+            filter: blur(0px);
+        }
+    }
+}
+
+/* animate opacity reveal */
+.animate-opacity-reveal {
+    animation: opacityReveal 0.5s ease-in forwards;
+    animation-delay: 0.6s;
+    opacity: 0;
+}
+
+@keyframes opacityReveal {
+    from {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.25;
+    }
+
+    75% {
+        opacity: 0.75;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
