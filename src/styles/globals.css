@@ -492,3 +492,161 @@
         opacity: 1;
     }
 }
+
+/* Social media cards spring animations */
+.animate-social-card-1 {
+    animation: socialCardSpring 0.8s ease-out forwards;
+    animation-delay: 0.8s;
+    transform: translateY(100px);
+    opacity: 0;
+}
+
+.animate-social-card-2 {
+    animation: socialCardSpring 0.8s ease-out forwards;
+    animation-delay: 1.0s;
+    transform: translateY(100px);
+    opacity: 0;
+}
+
+.animate-social-card-3 {
+    animation: socialCardSpring 0.8s ease-out forwards;
+    animation-delay: 1.2s;
+    transform: translateY(100px);
+    opacity: 0;
+}
+
+.animate-social-card-4 {
+    animation: socialCardSpring 0.8s ease-out forwards;
+    animation-delay: 1.4s;
+    transform: translateY(100px);
+    opacity: 0;
+}
+
+.animate-social-card-5 {
+    animation: socialCardSpring 0.8s ease-out forwards;
+    animation-delay: 1.6s;
+    transform: translateY(100px);
+    opacity: 0;
+}
+
+@keyframes socialCardSpring {
+    from {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+
+    60% {
+        transform: translateY(-10px);
+        opacity: 1;
+    }
+
+    80% {
+        transform: translateY(5px);
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Continuous rotation animation for Post Rotating SVG */
+.animate-rotate-continuous {
+    animation: rotateContinuous 4s linear infinite;
+}
+
+@keyframes rotateContinuous {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Avatar container scale and rotate animation */
+.animate-avatar-container-scale {
+    animation: avatarContainerScaleRotate 0.8s ease-out forwards;
+    animation-delay: 1.3s;
+    transform: scale(0) rotate(0deg);
+}
+
+@keyframes avatarContainerScaleRotate {
+    from {
+        transform: scale(0) rotate(0deg);
+        opacity: 0;
+
+    }
+
+    to {
+        transform: scale(1) rotate(-360deg);
+        opacity: 1;
+    }
+}
+
+/* Pill slide-in animation */
+.animate-pill-slide-in {
+    animation: pillSlideIn 0.5s ease-out forwards;
+    animation-delay: 2.0s;
+    transform: translateY(100px);
+    opacity: 0;
+    filter: blur(8px);
+}
+
+@keyframes pillSlideIn {
+    from {
+        transform: translateY(100px);
+        opacity: 0;
+        filter: blur(8px);
+    }
+
+    50% {
+        filter: blur(4px);
+        opacity: 0.5;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+        filter: blur(0px);
+    }
+}
+
+/* Orange pill slide-down animation */
+.animate-orange-pill-slide-down {
+    animation: orangePillSlideDown 0.5s ease-out forwards;
+    animation-delay: 2.6s;
+    transform: translateY(-50px);
+    opacity: 0;
+}
+
+@keyframes orangePillSlideDown {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Chevron oscillating animation */
+.animate-chevron-oscillate {
+    animation: chevronOscillate 1.5s ease-in-out infinite;
+    animation-delay: 3.0s;
+}
+
+@keyframes chevronOscillate {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(4px);
+    }
+}

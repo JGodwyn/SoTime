@@ -36,47 +36,47 @@ export default function Home() {
               alt="TikTok"
               width={64}
               height={64}
-              className="w-64 h-64 hover:scale-110 transition-transform duration-200"
+              className="w-64 h-64 hover:scale-110 transition-transform duration-200 animate-social-card-1"
             />
             <Image
               src="/assets/Instagram.svg"
               alt="Instagram"
               width={64}
               height={64}
-              className="w-64 h-64 hover:scale-110 transition-transform duration-200"
+              className="w-64 h-64 hover:scale-110 transition-transform duration-200 animate-social-card-2"
             />
             <Image
               src="/assets/X.svg"
               alt="X"
               width={64}
               height={64}
-              className="w-64 h-64 hover:scale-110 transition-transform duration-200"
+              className="w-64 h-64 hover:scale-110 transition-transform duration-200 animate-social-card-3"
             />
             <Image
               src="/assets/LinkedIn.svg"
               alt="LinkedIn"
               width={64}
               height={64}
-              className="w-64 h-64 hover:scale-110 transition-transform duration-200"
+              className="w-64 h-64 hover:scale-110 transition-transform duration-200 animate-social-card-4"
             />
             <Image
               src="/assets/MagicPost.svg"
               alt="MagicPost"
               width={64}
               height={64}
-              className="w-64 h-64 hover:scale-110 transition-transform duration-200"
+              className="w-64 h-64 hover:scale-110 transition-transform duration-200 animate-social-card-5"
             />
             </div>
 
             {/* Profile Avatar with rotating background */}
-            <div className="absolute z-10 top-2">
+            <div className="absolute z-10 top-2 animate-avatar-container-scale">
               {/* Showing Post Rotating SVG - positioned behind avatar */}
               <Image
                 src="/assets/ShowingPostRotating.svg"
                 alt="Showing Post Rotating"
                 width={98}
                 height={98}
-                className="w-24 h-24"
+                className="w-24 h-24 animate-rotate-continuous"
               />
 
               {/* Profile Avatar SVG - positioned on top of the rotating circle */}
@@ -93,7 +93,7 @@ export default function Home() {
           {/* Pills Container */}
           <div className="flex flex-col items-center justify-center mt-12">
             {/* "OH, AND THERE'S MORE..." Pill */}
-            <div className="flex items-center gap-3 bg-dodger-300 px-4 py-1 rounded-full z-10">
+            <div className="flex items-center gap-3 bg-dodger-300 px-4 py-1 rounded-full z-10 animate-pill-slide-in">
               <span className="text-title-lg font-bold text-black uppercase">
                 OH, AND THERE'S MORE...
               </span>
@@ -102,12 +102,12 @@ export default function Home() {
                 alt="Chevron Down"
                 width={20}
                 height={20}
-                className="w-5 h-5"
+                className="w-5 h-5 animate-chevron-oscillate"
               />
             </div>
 
             {/* "SCROLL DOWN" Pill */}
-            <div className="flex items-center gap-3 bg-pumpkin-500 px-4 py-1 rounded-full -mt-1 z-0">
+            <div className="flex items-center gap-3 bg-pumpkin-500 px-4 py-1 rounded-full -mt-1 z-0 animate-orange-pill-slide-down">
               <span className="text-title-sm font-bold text-white uppercase">
                 SCROLL DOWN
               </span>
