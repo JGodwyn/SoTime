@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import '@/src/styles/globals.css'
 import { Navigation } from '@/src/components/navigation'
+import { OverlayProvider } from '@/src/components/overlay/overlay-provider'
 
 export const metadata: Metadata = {
   title: 'SoTime',
@@ -15,8 +16,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <Navigation />
-        {children}
+        <OverlayProvider>
+          <Navigation />
+          {children}
+        </OverlayProvider>
       </body>
     </html>
   )

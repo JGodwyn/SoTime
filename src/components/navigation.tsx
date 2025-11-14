@@ -1,7 +1,17 @@
+'use client'
+
+import { useCallback } from "react"
 import Link from "next/link"
 import { Button } from "@/src/components/ui/button"
+import { useOverlay } from "@/src/components/overlay/overlay-provider"
 
 export function Navigation() {
+  const { openOverlay } = useOverlay()
+
+  const handleConnectClick = useCallback(() => {
+    openOverlay()
+  }, [openOverlay])
+
   return (
     <nav className="sticky top-16 z-50 flex justify-center pt-4 animate-slide-in-from-top">
       <div className="bg-night-700 rounded-full px-2 py-2">
@@ -18,14 +28,14 @@ export function Navigation() {
             <Link href="/features" className="text-white text-body-md hover:text-white/80 transition-colors">
               Features
             </Link>
-            <Link href="/auth">
-              <Button 
-                size="md" 
-                className="text-btn-sm uppercase tracking-wide"
-              >
-                CONNECT ACCOUNT
-              </Button>
-            </Link>
+            <Button
+              type="button"
+              size="md"
+              className="text-btn-lg uppercase tracking-wide"
+              onClick={handleConnectClick}
+            >
+              CONNECT ACCOUNT
+            </Button>
           </div>
         </div>
       </div>

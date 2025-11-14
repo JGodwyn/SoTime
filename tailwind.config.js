@@ -1,4 +1,9 @@
 /** @type {import('tailwindcss').Config} */
+const fontSizeWithVar = (variable, fallback, options = {}) => [
+    `var(${variable}, ${fallback})`,
+    options,
+];
+
 module.exports = {
     darkMode: ['class'],
     content: [
@@ -101,192 +106,126 @@ module.exports = {
             },
             fontSize: {
                 // Display styles - Phudu font, SemiBold weight
-                'display-3xl': [
-                    '110px',
-                    {
-                        lineHeight: '118px',
-                        fontFamily: 'Phudu',
-                        fontWeight: '600',
-                    },
-                ],
-                'display-2xl': [
-                    '100px',
-                    {
-                        lineHeight: '108px',
-                        fontFamily: 'Phudu',
-                        fontWeight: '600',
-                    },
-                ],
-                'display-xl': [
-                    '91px',
-                    {
-                        lineHeight: '96px',
-                        fontFamily: 'Phudu',
-                        fontWeight: '600',
-                    },
-                ],
-                'display-lg': [
-                    '83px',
-                    {
-                        lineHeight: '88px',
-                        fontFamily: 'Phudu',
-                        fontWeight: '600',
-                    },
-                ],
-                'display-md': [
-                    '67px',
-                    {
-                        lineHeight: '72px',
-                        fontFamily: 'Phudu',
-                        fontWeight: '600',
-                    },
-                ],
-                'display-sm': [
-                    '53px',
-                    {
-                        lineHeight: '56px',
-                        fontFamily: 'Phudu',
-                        fontWeight: '600',
-                    },
-                ],
+                'display-3xl': fontSizeWithVar('--display-3xl', '110px', {
+                    lineHeight: '118px',
+                    fontFamily: 'Phudu',
+                    fontWeight: '600',
+                }),
+                'display-2xl': fontSizeWithVar('--display-2xl', '100px', {
+                    lineHeight: '108px',
+                    fontFamily: 'Phudu',
+                    fontWeight: '600',
+                }),
+                'display-xl': fontSizeWithVar('--display-xl', '91px', {
+                    lineHeight: '96px',
+                    fontFamily: 'Phudu',
+                    fontWeight: '600',
+                }),
+                'display-lg': fontSizeWithVar('--display-lg', '83px', {
+                    lineHeight: '88px',
+                    fontFamily: 'Phudu',
+                    fontWeight: '600',
+                }),
+                'display-md': fontSizeWithVar('--display-md', '67px', {
+                    lineHeight: '72px',
+                    fontFamily: 'Phudu',
+                    fontWeight: '600',
+                }),
+                'display-sm': fontSizeWithVar('--display-sm', '53px', {
+                    lineHeight: '56px',
+                    fontFamily: 'Phudu',
+                    fontWeight: '600',
+                }),
 
                 // Heading styles - Phudu font, SemiBold weight
-                'heading-lg': [
-                    '43px',
-                    {
-                        lineHeight: '48px',
-                        fontFamily: 'Phudu',
-                        fontWeight: '600',
-                    },
-                ],
-                'heading-md': [
-                    '34px',
-                    {
-                        lineHeight: '40px',
-                        fontFamily: 'Phudu',
-                        fontWeight: '600',
-                    },
-                ],
-                'heading-sm': [
-                    '27px',
-                    {
-                        lineHeight: '32px',
-                        fontFamily: 'Phudu',
-                        fontWeight: '600',
-                    },
-                ],
+                'heading-lg': fontSizeWithVar('--heading-lg', '43px', {
+                    lineHeight: '48px',
+                    fontFamily: 'Phudu',
+                    fontWeight: '600',
+                }),
+                'heading-md': fontSizeWithVar('--heading-md', '34px', {
+                    lineHeight: '40px',
+                    fontFamily: 'Phudu',
+                    fontWeight: '600',
+                }),
+                'heading-sm': fontSizeWithVar('--heading-sm', '27px', {
+                    lineHeight: '32px',
+                    fontFamily: 'Phudu',
+                    fontWeight: '600',
+                }),
 
                 // Title styles - Phudu font, SemiBold weight
-                'title-lg': [
-                    '22px',
-                    {
-                        lineHeight: '28px',
-                        fontFamily: 'Phudu',
-                        fontWeight: '600',
-                    },
-                ],
-                'title-md': [
-                    '17px',
-                    {
-                        lineHeight: '24px',
-                        fontFamily: 'Phudu',
-                        fontWeight: '600',
-                    },
-                ],
-                'title-sm': [
-                    '14px',
-                    {
-                        lineHeight: '20px',
-                        fontFamily: 'Phudu',
-                        fontWeight: '600',
-                    },
-                ],
+                'title-lg': fontSizeWithVar('--title-lg', '22px', {
+                    lineHeight: '28px',
+                    fontFamily: 'Phudu',
+                    fontWeight: '600',
+                }),
+                'title-md': fontSizeWithVar('--title-md', '17px', {
+                    lineHeight: '24px',
+                    fontFamily: 'Phudu',
+                    fontWeight: '600',
+                }),
+                'title-sm': fontSizeWithVar('--title-sm', '14px', {
+                    lineHeight: '20px',
+                    fontFamily: 'Phudu',
+                    fontWeight: '600',
+                }),
 
                 // Body styles - Mozilla Headline font
-                'body-lg': [
-                    '17px',
-                    {
-                        lineHeight: '24px',
-                        fontFamily: 'Mozilla Headline',
-                        fontWeight: '400',
-                    },
-                ],
-                'body-lg-bold': [
-                    '17px',
-                    {
-                        lineHeight: '24px',
-                        fontFamily: 'Mozilla Headline',
-                        fontWeight: '600',
-                    },
-                ],
-                'body-md': [
-                    '14px',
-                    {
-                        lineHeight: '20px',
-                        fontFamily: 'Mozilla Headline',
-                        fontWeight: '400',
-                    },
-                ],
-                'body-md-bold': [
-                    '14px',
-                    {
-                        lineHeight: '20px',
-                        fontFamily: 'Mozilla Headline',
-                        fontWeight: '600',
-                    },
-                ],
-                'body-sm': [
-                    '9px',
-                    {
-                        lineHeight: '12px',
-                        fontFamily: 'Mozilla Headline',
-                        fontWeight: '400',
-                    },
-                ],
-                'body-sm-bold': [
-                    '9px',
-                    {
-                        lineHeight: '12px',
-                        fontFamily: 'Mozilla Headline',
-                        fontWeight: '500',
-                    },
-                ],
+                'body-lg': fontSizeWithVar('--body-lg', '17px', {
+                    lineHeight: '24px',
+                    fontFamily: 'Mozilla Headline',
+                    fontWeight: '400',
+                }),
+                'body-lg-bold': fontSizeWithVar('--body-lg-bold', '17px', {
+                    lineHeight: '24px',
+                    fontFamily: 'Mozilla Headline',
+                    fontWeight: '600',
+                }),
+                'body-md': fontSizeWithVar('--body-md', '14px', {
+                    lineHeight: '20px',
+                    fontFamily: 'Mozilla Headline',
+                    fontWeight: '400',
+                }),
+                'body-md-bold': fontSizeWithVar('--body-md-bold', '14px', {
+                    lineHeight: '20px',
+                    fontFamily: 'Mozilla Headline',
+                    fontWeight: '600',
+                }),
+                'body-sm': fontSizeWithVar('--body-sm', '9px', {
+                    lineHeight: '12px',
+                    fontFamily: 'Mozilla Headline',
+                    fontWeight: '400',
+                }),
+                'body-sm-bold': fontSizeWithVar('--body-sm-bold', '9px', {
+                    lineHeight: '12px',
+                    fontFamily: 'Mozilla Headline',
+                    fontWeight: '500',
+                }),
 
                 // Button styles - Phudu font, Medium weight
-                'btn-lg': [
-                    '14px',
-                    {
-                        lineHeight: '20px',
-                        fontFamily: 'Phudu',
-                        fontWeight: '500',
-                    },
-                ],
-                'btn-sm': [
-                    '10px',
-                    {
-                        lineHeight: '16px',
-                        fontFamily: 'Phudu',
-                        fontWeight: '500',
-                    },
-                ],
+                'btn-lg': fontSizeWithVar('--btn-lg', '14px', {
+                    lineHeight: '20px',
+                    fontFamily: 'Phudu',
+                    fontWeight: '500',
+                }),
+                'btn-sm': fontSizeWithVar('--btn-sm', '10px', {
+                    lineHeight: '16px',
+                    fontFamily: 'Phudu',
+                    fontWeight: '500',
+                }),
 
                 // Link and subline styles
-                link: [
-                    '14px',
-                    {
-                        lineHeight: '20px',
-                        fontFamily: 'Mozilla Headline',
-                        fontWeight: '400',
-                    },
-                ],
-                sublines: [
-                    '10px',
-                    {
-                        lineHeight: '12px',
-                        fontFamily: 'Phudu',
-                        fontWeight: '600',
-                    },
-                ],
+                link: fontSizeWithVar('--link', '14px', {
+                    lineHeight: '20px',
+                    fontFamily: 'Mozilla Headline',
+                    fontWeight: '400',
+                }),
+                sublines: fontSizeWithVar('--sublines', '10px', {
+                    lineHeight: '12px',
+                    fontFamily: 'Phudu',
+                    fontWeight: '600',
+                }),
             },
             borderRadius: {
                 lg: 'var(--radius)',

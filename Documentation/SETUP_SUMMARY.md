@@ -53,7 +53,7 @@ Development Dependencies:
 - **`src/components/ui/button.tsx`** - Example Shadcn Button component
 - **`src/components/navigation.tsx`** - Navigation component
 - **`src/app/layout.tsx`** - Root layout with navigation
-- **`src/app/page.tsx`** - Landing page with Tailwind styling
+- **`src/app/landingPage.tsx`** - Landing page with Tailwind styling
 - **`src/app/auth/page.tsx`** - Authentication page template
 
 ### 6. Styling
@@ -130,7 +130,7 @@ sotime/
 ├── src/
 │   ├── app/                 # Next.js app directory
 │   │   ├── layout.tsx      # Root layout
-│   │   ├── page.tsx        # Landing page
+│   │   ├── landingPage.tsx # Landing page
 │   │   └── auth/           # Auth pages
 │   ├── components/          # React components
 │   │   ├── ui/             # Shadcn UI components

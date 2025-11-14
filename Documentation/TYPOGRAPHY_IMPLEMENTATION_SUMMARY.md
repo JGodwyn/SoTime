@@ -29,7 +29,7 @@ _Note: These are the exact fonts you specified in your design tokens and are ava
 - ✅ Applied correct font weights (400, 500, 600)
 - ✅ Applied correct line heights from the design tokens
 
-### `src/app/page.tsx`
+### `src/app/landingPage.tsx`
 
 - ✅ Updated to use new semantic color system
 - ✅ Maintained existing typography classes
