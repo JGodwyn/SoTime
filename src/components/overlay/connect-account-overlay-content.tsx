@@ -8,27 +8,20 @@ export function ConnectAccountOverlayContent() {
   const { closeOverlay } = useOverlay()
 
   return (
-    <div className="flex flex-col items-center text-center space-y-6">
+    <div className="relative z-10 w-full max-w-sm rounded-3xl p-8 text-left">
+      <div className="flex flex-col items-center text-center space-y-6">
       {/* Lightning Bolt Icon */}
       <div className="flex justify-center mb-2">
-        <svg
-          width="64"
-          height="64"
-          viewBox="0 0 64 64"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          className="text-dodger-400"
-        >
-          <path
-            d="M32 8L20 32H32L28 56L44 32H32L36 8H32Z"
-            fill="currentColor"
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
+          <img
+            src="/assets/IllustrationConnectAccount.svg"
+            alt="Chevron Down"
+            width={40}
+            height={40}
           />
-        </svg>
-      </div>
+
+        </div>
+        
+        
 
       {/* Title */}
       <h2 className="text-heading-md text-white uppercase tracking-wide">
@@ -36,7 +29,7 @@ export function ConnectAccountOverlayContent() {
       </h2>
 
       {/* Description */}
-      <p className="text-body-md text-white/80 max-w-sm">
+      <p className="text-body-lg text-white/80 max-w-sm">
         You can add more accounts once you connect X.
       </p>
 
@@ -64,6 +57,7 @@ export function ConnectAccountOverlayContent() {
         >
           CLOSE
         </Button>
+      </div>
       </div>
     </div>
   )

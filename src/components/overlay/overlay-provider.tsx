@@ -9,7 +9,6 @@ type OverlayContent = ReactNode | (() => ReactNode)
 
 type OverlayRegistration = {
   content: OverlayContent
-  panelClassName?: string
   backdropClassName?: string
   closeOnBackdrop?: boolean
   closeOnEscape?: boolean
@@ -17,7 +16,6 @@ type OverlayRegistration = {
 
 type OverlayOpenConfig = {
   content?: OverlayContent
-  panelClassName?: string
   backdropClassName?: string
   closeOnBackdrop?: boolean
   closeOnEscape?: boolean
@@ -25,7 +23,6 @@ type OverlayOpenConfig = {
 
 type OverlayActiveConfig = {
   content: ReactNode
-  panelClassName?: string
   backdropClassName?: string
   closeOnBackdrop: boolean
   closeOnEscape: boolean
@@ -39,9 +36,6 @@ type OverlayContextValue = {
 }
 
 const OverlayContext = createContext<OverlayContextValue | null>(null)
-
-const DEFAULT_PANEL_CLASS =
-  "relative z-10 w-full max-w-lg rounded-3xl bg-night-800 border border-white/10 p-8 shadow-2xl text-left"
 
 // change the backdrop configurations here
 const DEFAULT_BACKDROP_CLASS = "absolute inset-0 bg-black/80 backdrop-blur-md"
@@ -101,14 +95,12 @@ export function OverlayProvider({ children }: { children: ReactNode }) {
           ? (mergedContent as () => ReactNode)()
           : mergedContent
 
-      const mergedPanelClass = overrideConfig?.panelClassName ?? baseConfig?.panelClassName
       const mergedBackdropClass = overrideConfig?.backdropClassName ?? baseConfig?.backdropClassName
       const mergedCloseOnBackdrop = overrideConfig?.closeOnBackdrop ?? baseConfig?.closeOnBackdrop ?? true
       const mergedCloseOnEscape = overrideConfig?.closeOnEscape ?? baseConfig?.closeOnEscape ?? true
 
       setActiveConfig({
         content: resolvedContent,
-        panelClassName: mergedPanelClass,
         backdropClassName: mergedBackdropClass,
         closeOnBackdrop: mergedCloseOnBackdrop,
         closeOnEscape: mergedCloseOnEscape,
@@ -191,7 +183,7 @@ export function OverlayProvider({ children }: { children: ReactNode }) {
                 )}
                 onClick={activeConfig.closeOnBackdrop ? closeOverlay : undefined}
             />
-            {/* this is the stadium light background styler */}
+            {/* Stadium light background effect */}
               <div className="absolute inset-0 pointer-events-none flex items-center justify-center">
                 <Image
                   src="/assets/StadiumLight.svg"
@@ -204,10 +196,10 @@ export function OverlayProvider({ children }: { children: ReactNode }) {
                   )}
                 />
               </div>
+              {/* Overlay content - styling is handled by the content component */}
               <div
                 className={cn(
-                  DEFAULT_PANEL_CLASS,
-                  activeConfig.panelClassName,
+                  "relative z-10",
                   isClosing ? "animate-overlay-fade-out" : "animate-overlay-fade-in"
                 )}
               >
