@@ -5,723 +5,763 @@
 @tailwind utilities;
 
 @layer base {
-    :root {
-        /* Typography CSS Variables */
-        --display-3xl: 110px;
-        --display-2xl: 100px;
-        --display-xl: 91px;
-        --display-lg: 83px;
-        --display-md: 67px;
-        --display-sm: 53px;
-        --heading-lg: 43px;
-        --heading-md: 34px;
-        --heading-sm: 27px;
-        --title-lg: 22px;
-        --title-md: 17px;
-        --title-sm: 14px;
-        --body-lg: 17px;
-        --body-lg-bold: 17px;
-        --body-md: 14px;
-        --body-md-bold: 14px;
-        --body-sm: 9px;
-        --body-sm-bold: 9px;
-        --btn-lg: 14px;
-        --btn-sm: 10px;
-        --link: 14px;
-        --sublines: 10px;
+  :root {
+    /* Typography CSS Variables */
+    --display-3xl: 110px;
+    --display-2xl: 100px;
+    --display-xl: 91px;
+    --display-lg: 83px;
+    --display-md: 67px;
+    --display-sm: 53px;
+    --heading-lg: 43px;
+    --heading-md: 34px;
+    --heading-sm: 27px;
+    --title-lg: 22px;
+    --title-md: 17px;
+    --title-sm: 14px;
+    --body-lg: 17px;
+    --body-lg-bold: 17px;
+    --body-md: 14px;
+    --body-md-bold: 14px;
+    --body-sm: 9px;
+    --body-sm-bold: 9px;
+    --btn-lg: 14px;
+    --btn-sm: 10px;
+    --link: 14px;
+    --sublines: 10px;
 
-        /* Button Text Colors */
-        --btn-default-text: 0 0% 100%;
-        /* night0 - text color for default button */
-        --btn-secondary-text: 0 0% 0%;
-        /* night1000 - text color for secondary button */
-        --btn-outline-text: 0 0% 100%;
-        /* night0 - text color for outline button (hover) */
-        --btn-ghost-text: 0 0% 100%;
-        /* night0 - text color for ghost button (hover) */
-        --btn-link-text: 20 100% 50%;
-        /* pumpkin500 - text color for link button */
-        --btn-destructive-text: 0 0% 100%;
-        /* night0 - text color for destructive button */
+    /* Button Text Colors */
+    --btn-default-text: 0 0% 100%;
+    /* night0 - text color for default button */
+    --btn-secondary-text: 0 0% 0%;
+    /* night1000 - text color for secondary button */
+    --btn-outline-text: 0 0% 100%;
+    /* night0 - text color for outline button (hover) */
+    --btn-ghost-text: 0 0% 100%;
+    /* night0 - text color for ghost button (hover) */
+    --btn-link-text: 20 100% 50%;
+    /* pumpkin500 - text color for link button */
+    --btn-destructive-text: 0 0% 100%;
+    /* night0 - text color for destructive button */
 
-        /* Default dark theme (Night900 background) */
-        /* change background to Night1000 */
-        --background: 0 0% 0%;
-        /* night1000 */
-        --foreground: 0 0% 100%;
-        /* night0 */
+    /* Default dark theme (Night900 background) */
+    /* change background to Night1000 */
+    --background: 0 0% 0%;
+    /* night1000 */
+    --foreground: 0 0% 100%;
+    /* night0 */
 
-        /* Card & Popover */
-        --card: 240 10% 4%;
-        /* night900 */
-        --card-foreground: 0 0% 100%;
-        /* night0 */
-        --popover: 240 10% 4%;
-        /* night900 */
-        --popover-foreground: 0 0% 100%;
-        /* night0 */
+    /* Card & Popover */
+    --card: 240 10% 4%;
+    /* night900 */
+    --card-foreground: 0 0% 100%;
+    /* night0 */
+    --popover: 240 10% 4%;
+    /* night900 */
+    --popover-foreground: 0 0% 100%;
+    /* night0 */
 
-        /* Primary Colors - Pumpkin */
-        --primary: 20 100% 50%;
-        /* pumpkin500 */
-        --primary-foreground: 0 0% 100%;
-        /* night0 */
+    /* Primary Colors - Pumpkin */
+    --primary: 20 100% 50%;
+    /* pumpkin500 */
+    --primary-foreground: 0 0% 100%;
+    /* night0 */
 
-        /* Secondary Colors - Dodger */
-        --secondary: 205 100% 50%;
-        /* dodger400 */
-        --secondary-foreground: 0 0% 100%;
-        /* night0 */
+    /* Secondary Colors - Dodger */
+    --secondary: 205 100% 50%;
+    /* dodger400 */
+    --secondary-foreground: 0 0% 100%;
+    /* night0 */
 
-        /* Muted Colors */
-        --muted: 227 8% 22%;
-        /* night500 */
-        --muted-foreground: 225 8% 90%;
-        /* night50 */
+    /* Muted Colors */
+    --muted: 227 8% 22%;
+    /* night500 */
+    --muted-foreground: 225 8% 90%;
+    /* night50 */
 
-        /* Accent Colors */
-        --accent: 205 100% 50%;
-        /* dodger400 */
-        --accent-foreground: 0 0% 100%;
-        /* night0 */
+    /* Accent Colors */
+    --accent: 205 100% 50%;
+    /* dodger400 */
+    --accent-foreground: 0 0% 100%;
+    /* night0 */
 
-        /* Destructive Colors */
-        --destructive: 0 84% 60%;
-        /* Keeping red for errors */
-        --destructive-foreground: 0 0% 100%;
-        /* night0 */
+    /* Destructive Colors */
+    --destructive: 0 84% 60%;
+    /* Keeping red for errors */
+    --destructive-foreground: 0 0% 100%;
+    /* night0 */
 
-        /* Border & Input */
-        --border: 227 8% 22%;
-        /* night500 */
-        --input: 227 8% 22%;
-        /* night500 */
-        --ring: 20 100% 50%;
-        /* pumpkin500 */
+    /* Border & Input */
+    --border: 227 8% 22%;
+    /* night500 */
+    --input: 227 8% 22%;
+    /* night500 */
+    --ring: 20 100% 50%;
+    /* pumpkin500 */
 
-        /* Radius */
-        --radius: 0.5rem;
-    }
+    /* Radius */
+    --radius: 0.5rem;
+  }
 
-    .light {
-        /* Light mode overrides */
-        --background: 0 0% 100%;
-        /* night0 */
-        --foreground: 227 8% 22%;
-        /* night500 */
+  .light {
+    /* Light mode overrides */
+    --background: 0 0% 100%;
+    /* night0 */
+    --foreground: 227 8% 22%;
+    /* night500 */
 
-        --card: 0 0% 100%;
-        /* night0 */
-        --card-foreground: 227 8% 22%;
-        /* night500 */
-        --popover: 0 0% 100%;
-        /* night0 */
-        --popover-foreground: 227 8% 22%;
-        /* night500 */
+    --card: 0 0% 100%;
+    /* night0 */
+    --card-foreground: 227 8% 22%;
+    /* night500 */
+    --popover: 0 0% 100%;
+    /* night0 */
+    --popover-foreground: 227 8% 22%;
+    /* night500 */
 
-        --primary: 20 100% 50%;
-        /* pumpkin500 */
-        --primary-foreground: 0 0% 100%;
-        /* night0 */
+    --primary: 20 100% 50%;
+    /* pumpkin500 */
+    --primary-foreground: 0 0% 100%;
+    /* night0 */
 
-        --secondary: 205 100% 50%;
-        /* dodger400 */
-        --secondary-foreground: 0 0% 100%;
-        /* night0 */
+    --secondary: 205 100% 50%;
+    /* dodger400 */
+    --secondary-foreground: 0 0% 100%;
+    /* night0 */
 
-        --muted: 225 8% 90%;
-        /* night50 */
-        --muted-foreground: 227 8% 22%;
-        /* night500 */
+    --muted: 225 8% 90%;
+    /* night50 */
+    --muted-foreground: 227 8% 22%;
+    /* night500 */
 
-        --accent: 205 100% 50%;
-        /* dodger400 */
-        --accent-foreground: 0 0% 100%;
-        /* night0 */
+    --accent: 205 100% 50%;
+    /* dodger400 */
+    --accent-foreground: 0 0% 100%;
+    /* night0 */
 
-        --destructive: 0 84% 60%;
-        --destructive-foreground: 0 0% 100%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
 
-        /* Button Text Colors - Light Mode */
-        --btn-default-text: 0 0% 100%;
-        /* night0 */
-        --btn-secondary-text: 0 0% 0%;
-        /* night1000 */
-        --btn-outline-text: 0 0% 100%;
-        /* night0 */
-        --btn-ghost-text: 0 0% 100%;
-        /* night0 */
-        --btn-link-text: 20 100% 50%;
-        /* pumpkin500 */
-        --btn-destructive-text: 0 0% 100%;
-        /* night0 */
+    /* Button Text Colors - Light Mode */
+    --btn-default-text: 0 0% 100%;
+    /* night0 */
+    --btn-secondary-text: 0 0% 0%;
+    /* night1000 */
+    --btn-outline-text: 0 0% 100%;
+    /* night0 */
+    --btn-ghost-text: 0 0% 100%;
+    /* night0 */
+    --btn-link-text: 20 100% 50%;
+    /* pumpkin500 */
+    --btn-destructive-text: 0 0% 100%;
+    /* night0 */
 
-        --border: 225 8% 90%;
-        /* night50 */
-        --input: 225 8% 90%;
-        /* night50 */
-        --ring: 20 100% 50%;
-        /* pumpkin500 */
-    }
+    --border: 225 8% 90%;
+    /* night50 */
+    --input: 225 8% 90%;
+    /* night50 */
+    --ring: 20 100% 50%;
+    /* pumpkin500 */
+  }
 
-    .dark {
-        /* Dark mode (default) */
-        --background: 240 10% 4%;
-        /* night900 */
-        --foreground: 0 0% 100%;
-        /* night0 */
+  .dark {
+    /* Dark mode (default) */
+    --background: 240 10% 4%;
+    /* night900 */
+    --foreground: 0 0% 100%;
+    /* night0 */
 
-        --card: 240 10% 4%;
-        /* night900 */
-        --card-foreground: 0 0% 100%;
-        /* night0 */
-        --popover: 240 10% 4%;
-        /* night900 */
-        --popover-foreground: 0 0% 100%;
-        /* night0 */
+    --card: 240 10% 4%;
+    /* night900 */
+    --card-foreground: 0 0% 100%;
+    /* night0 */
+    --popover: 240 10% 4%;
+    /* night900 */
+    --popover-foreground: 0 0% 100%;
+    /* night0 */
 
-        --primary: 20 100% 50%;
-        /* pumpkin500 */
-        --primary-foreground: 0 0% 100%;
-        /* night0 */
+    --primary: 20 100% 50%;
+    /* pumpkin500 */
+    --primary-foreground: 0 0% 100%;
+    /* night0 */
 
-        --secondary: 205 100% 50%;
-        /* dodger400 */
-        --secondary-foreground: 0 0% 100%;
-        /* night0 */
+    --secondary: 205 100% 50%;
+    /* dodger400 */
+    --secondary-foreground: 0 0% 100%;
+    /* night0 */
 
-        --muted: 227 8% 22%;
-        /* night500 */
-        --muted-foreground: 225 8% 90%;
-        /* night50 */
+    --muted: 227 8% 22%;
+    /* night500 */
+    --muted-foreground: 225 8% 90%;
+    /* night50 */
 
-        --accent: 205 100% 50%;
-        /* dodger400 */
-        --accent-foreground: 0 0% 100%;
-        /* night0 */
+    --accent: 205 100% 50%;
+    /* dodger400 */
+    --accent-foreground: 0 0% 100%;
+    /* night0 */
 
-        --destructive: 0 84% 60%;
-        --destructive-foreground: 0 0% 100%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
 
-        /* Button Text Colors - Dark Mode */
-        --btn-default-text: 0 0% 100%;
-        /* night0 */
-        --btn-secondary-text: 0 0% 0%;
-        /* night1000 */
-        --btn-outline-text: 0 0% 100%;
-        /* night0 */
-        --btn-ghost-text: 0 0% 100%;
-        /* night0 */
-        --btn-link-text: 20 100% 50%;
-        /* pumpkin500 */
-        --btn-destructive-text: 0 0% 100%;
-        /* night0 */
+    /* Button Text Colors - Dark Mode */
+    --btn-default-text: 0 0% 100%;
+    /* night0 */
+    --btn-secondary-text: 0 0% 0%;
+    /* night1000 */
+    --btn-outline-text: 0 0% 100%;
+    /* night0 */
+    --btn-ghost-text: 0 0% 100%;
+    /* night0 */
+    --btn-link-text: 20 100% 50%;
+    /* pumpkin500 */
+    --btn-destructive-text: 0 0% 100%;
+    /* night0 */
 
-        --border: 227 8% 22%;
-        /* night500 */
-        --input: 227 8% 22%;
-        /* night500 */
-        --ring: 20 100% 50%;
-        /* pumpkin500 */
-    }
+    --border: 227 8% 22%;
+    /* night500 */
+    --input: 227 8% 22%;
+    /* night500 */
+    --ring: 20 100% 50%;
+    /* pumpkin500 */
+  }
 }
 
 @layer base {
-    * {
-        @apply border-border;
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Mozilla Headline', 'Inter', -apple-system, BlinkMacSystemFont,
+      'Segoe UI', Roboto, sans-serif;
+  }
+
+  /* Typography utility classes */
+  .text-display-3xl {
+    font-size: var(--display-3xl);
+    font-family: 'Phudu', sans-serif;
+    font-weight: 600;
+    line-height: 118px;
+    letter-spacing: 0px;
+  }
+
+  .text-display-2xl {
+    font-size: var(--display-2xl);
+    font-family: 'Phudu', sans-serif;
+    font-weight: 600;
+    line-height: 108px;
+    letter-spacing: 0px;
+  }
+
+  .text-display-xl {
+    font-size: var(--display-xl);
+    font-family: 'Phudu', sans-serif;
+    font-weight: 600;
+    line-height: 96px;
+    letter-spacing: 0px;
+  }
+
+  .text-display-lg {
+    font-size: var(--display-lg);
+    font-family: 'Phudu', sans-serif;
+    font-weight: 600;
+    line-height: 88px;
+    letter-spacing: 0px;
+  }
+
+  .text-display-md {
+    font-size: var(--display-md);
+    font-family: 'Phudu', sans-serif;
+    font-weight: 600;
+    line-height: 72px;
+    letter-spacing: 0px;
+  }
+
+  .text-display-sm {
+    font-size: var(--display-sm);
+    font-family: 'Phudu', sans-serif;
+    font-weight: 600;
+    line-height: 56px;
+    letter-spacing: 0px;
+  }
+
+  .text-heading-lg {
+    font-size: var(--heading-lg);
+    font-family: 'Phudu', sans-serif;
+    font-weight: 600;
+    line-height: 48px;
+    letter-spacing: 0px;
+  }
+
+  .text-heading-md {
+    font-size: var(--heading-md);
+    font-family: 'Phudu', sans-serif;
+    font-weight: 600;
+    line-height: 40px;
+    letter-spacing: 0px;
+  }
+
+  .text-heading-sm {
+    font-size: var(--heading-sm);
+    font-family: 'Phudu', sans-serif;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0px;
+  }
+
+  .text-title-lg {
+    font-size: var(--title-lg);
+    font-family: 'Phudu', sans-serif;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: 0px;
+  }
+
+  .text-title-md {
+    font-size: var(--title-md);
+    font-family: 'Phudu', sans-serif;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0px;
+  }
+
+  .text-title-sm {
+    font-size: var(--title-sm);
+    font-family: 'Phudu', sans-serif;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0px;
+  }
+
+  .text-body-lg {
+    font-size: var(--body-lg);
+    font-family: 'Mozilla Headline', sans-serif;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0px;
+  }
+
+  .text-body-lg-bold {
+    font-size: var(--body-lg-bold);
+    font-family: 'Mozilla Headline', sans-serif;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0px;
+  }
+
+  .text-body-md {
+    font-size: var(--body-md);
+    font-family: 'Mozilla Headline', sans-serif;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0px;
+  }
+
+  .text-body-md-bold {
+    font-size: var(--body-md-bold);
+    font-family: 'Mozilla Headline', sans-serif;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0px;
+  }
+
+  .text-body-sm {
+    font-size: var(--body-sm);
+    font-family: 'Mozilla Headline', sans-serif;
+    font-weight: 400;
+    line-height: 12px;
+    letter-spacing: 0px;
+  }
+
+  .text-body-sm-bold {
+    font-size: var(--body-sm-bold);
+    font-family: 'Mozilla Headline', sans-serif;
+    font-weight: 500;
+    line-height: 12px;
+    letter-spacing: 0px;
+  }
+
+  .text-btn-lg {
+    font-size: var(--btn-lg);
+    font-family: 'Phudu', sans-serif;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 16px;
+  }
+
+  .text-btn-sm {
+    font-size: var(--btn-sm);
+    font-family: 'Phudu', sans-serif;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0px;
+  }
+
+  .text-link {
+    font-size: var(--link);
+    font-family: 'Mozilla Headline', sans-serif;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0px;
+  }
+
+  .text-sublines {
+    font-size: var(--sublines);
+    font-family: 'Phudu', sans-serif;
+    font-weight: 600;
+    line-height: 12px;
+    letter-spacing: 0px;
+  }
+
+  /* Circular vignette effect for text */
+  .text-vignette {
+    background: radial-gradient(
+      ellipse 90% 100% at center,
+      hsl(var(--foreground)) 0%,
+      hsl(var(--foreground)) 30%,
+      transparent 70%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+  }
+
+  /* Stadium light effect with CSS mask */
+  .stadium-light-mask {
+    mask: linear-gradient(
+      to bottom,
+      transparent 100%,
+      black 10%,
+      black 90%,
+      transparent 100%
+    );
+    -webkit-mask: linear-gradient(
+      to bottom,
+      transparent 0%,
+      black 10%,
+      black 90%,
+      transparent 100%
+    );
+  }
+
+  /* Navbar slide-in animation */
+  .animate-slide-in-from-top {
+    animation: slideInFromTop 0.6s ease-out forwards;
+    transform: translateY(-100%);
+  }
+
+  @keyframes slideInFromTop {
+    from {
+      transform: translateY(-100%);
+      opacity: 0;
+      filter: blur(8px);
     }
 
-    body {
-        @apply bg-background text-foreground;
-        font-family: 'Mozilla Headline', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    50% {
+      filter: blur(4px);
     }
 
-    /* Typography utility classes */
-    .text-display-3xl {
-        font-size: var(--display-3xl);
-        font-family: 'Phudu', sans-serif;
-        font-weight: 600;
-        line-height: 118px;
-        letter-spacing: 0px;
+    to {
+      transform: translateY(0);
+      opacity: 1;
+      filter: blur(0px);
+    }
+  }
+
+  /* Stadium light fade-in animation */
+  .animate-stadium-light-fade {
+    animation: stadiumLightFade 0.8s ease-out forwards;
+    opacity: 0;
+  }
+
+  @keyframes stadiumLightFade {
+    from {
+      opacity: 0;
     }
 
-    .text-display-2xl {
-        font-size: var(--display-2xl);
-        font-family: 'Phudu', sans-serif;
-        font-weight: 600;
-        line-height: 108px;
-        letter-spacing: 0px;
+    to {
+      opacity: 1;
+    }
+  }
+
+  /* Simple fade-in animation for text */
+  .animate-blur-opacity-reveal {
+    animation: textFadeIn 0.5s ease-in forwards;
+    animation-delay: 0.3s;
+    opacity: 0;
+    filter: blur(8px);
+  }
+
+  @keyframes textFadeIn {
+    from {
+      opacity: 0;
+      filter: blur(24px);
     }
 
-    .text-display-xl {
-        font-size: var(--display-xl);
-        font-family: 'Phudu', sans-serif;
-        font-weight: 600;
-        line-height: 96px;
-        letter-spacing: 0px;
+    50% {
+      opacity: 0.25;
+      filter: blur(16px);
     }
 
-    .text-display-lg {
-        font-size: var(--display-lg);
-        font-family: 'Phudu', sans-serif;
-        font-weight: 600;
-        line-height: 88px;
-        letter-spacing: 0px;
+    75% {
+      opacity: 0.75;
+      filter: blur(8px);
     }
 
-    .text-display-md {
-        font-size: var(--display-md);
-        font-family: 'Phudu', sans-serif;
-        font-weight: 600;
-        line-height: 72px;
-        letter-spacing: 0px;
+    to {
+      opacity: 1;
+      filter: blur(0px);
     }
-
-    .text-display-sm {
-        font-size: var(--display-sm);
-        font-family: 'Phudu', sans-serif;
-        font-weight: 600;
-        line-height: 56px;
-        letter-spacing: 0px;
-    }
-
-    .text-heading-lg {
-        font-size: var(--heading-lg);
-        font-family: 'Phudu', sans-serif;
-        font-weight: 600;
-        line-height: 48px;
-        letter-spacing: 0px;
-    }
-
-    .text-heading-md {
-        font-size: var(--heading-md);
-        font-family: 'Phudu', sans-serif;
-        font-weight: 600;
-        line-height: 40px;
-        letter-spacing: 0px;
-    }
-
-    .text-heading-sm {
-        font-size: var(--heading-sm);
-        font-family: 'Phudu', sans-serif;
-        font-weight: 600;
-        line-height: 32px;
-        letter-spacing: 0px;
-    }
-
-    .text-title-lg {
-        font-size: var(--title-lg);
-        font-family: 'Phudu', sans-serif;
-        font-weight: 600;
-        line-height: 28px;
-        letter-spacing: 0px;
-    }
-
-    .text-title-md {
-        font-size: var(--title-md);
-        font-family: 'Phudu', sans-serif;
-        font-weight: 600;
-        line-height: 24px;
-        letter-spacing: 0px;
-    }
-
-    .text-title-sm {
-        font-size: var(--title-sm);
-        font-family: 'Phudu', sans-serif;
-        font-weight: 600;
-        line-height: 20px;
-        letter-spacing: 0px;
-    }
-
-    .text-body-lg {
-        font-size: var(--body-lg);
-        font-family: 'Mozilla Headline', sans-serif;
-        font-weight: 400;
-        line-height: 24px;
-        letter-spacing: 0px;
-    }
-
-    .text-body-lg-bold {
-        font-size: var(--body-lg-bold);
-        font-family: 'Mozilla Headline', sans-serif;
-        font-weight: 600;
-        line-height: 24px;
-        letter-spacing: 0px;
-    }
-
-    .text-body-md {
-        font-size: var(--body-md);
-        font-family: 'Mozilla Headline', sans-serif;
-        font-weight: 400;
-        line-height: 20px;
-        letter-spacing: 0px;
-    }
-
-    .text-body-md-bold {
-        font-size: var(--body-md-bold);
-        font-family: 'Mozilla Headline', sans-serif;
-        font-weight: 600;
-        line-height: 20px;
-        letter-spacing: 0px;
-    }
-
-    .text-body-sm {
-        font-size: var(--body-sm);
-        font-family: 'Mozilla Headline', sans-serif;
-        font-weight: 400;
-        line-height: 12px;
-        letter-spacing: 0px;
-    }
-
-    .text-body-sm-bold {
-        font-size: var(--body-sm-bold);
-        font-family: 'Mozilla Headline', sans-serif;
-        font-weight: 500;
-        line-height: 12px;
-        letter-spacing: 0px;
-    }
-
-    .text-btn-lg {
-        font-size: var(--btn-lg);
-        font-family: 'Phudu', sans-serif;
-        font-weight: 500;
-        line-height: 20px;
-        letter-spacing: 16px;
-    }
-
-    .text-btn-sm {
-        font-size: var(--btn-sm);
-        font-family: 'Phudu', sans-serif;
-        font-weight: 500;
-        line-height: 16px;
-        letter-spacing: 0px;
-    }
-
-    .text-link {
-        font-size: var(--link);
-        font-family: 'Mozilla Headline', sans-serif;
-        font-weight: 400;
-        line-height: 20px;
-        letter-spacing: 0px;
-    }
-
-    .text-sublines {
-        font-size: var(--sublines);
-        font-family: 'Phudu', sans-serif;
-        font-weight: 600;
-        line-height: 12px;
-        letter-spacing: 0px;
-    }
-
-    /* Circular vignette effect for text */
-    .text-vignette {
-        background: radial-gradient(ellipse 90% 100% at center,
-                hsl(var(--foreground)) 0%,
-                hsl(var(--foreground)) 30%,
-                transparent 70%);
-        background-clip: text;
-        -webkit-background-clip: text;
-        color: transparent;
-        -webkit-text-fill-color: transparent;
-    }
-
-    /* Stadium light effect with CSS mask */
-    .stadium-light-mask {
-        mask: linear-gradient(to bottom,
-                transparent 100%,
-                black 10%,
-                black 90%,
-                transparent 100%);
-        -webkit-mask: linear-gradient(to bottom,
-                transparent 0%,
-                black 10%,
-                black 90%,
-                transparent 100%);
-    }
-
-    /* Navbar slide-in animation */
-    .animate-slide-in-from-top {
-        animation: slideInFromTop 0.6s ease-out forwards;
-        transform: translateY(-100%);
-    }
-
-    @keyframes slideInFromTop {
-        from {
-            transform: translateY(-100%);
-            opacity: 0;
-            filter: blur(8px);
-        }
-
-        50% {
-            filter: blur(4px);
-        }
-
-        to {
-            transform: translateY(0);
-            opacity: 1;
-            filter: blur(0px);
-        }
-    }
-
-    /* Stadium light fade-in animation */
-    .animate-stadium-light-fade {
-        animation: stadiumLightFade 0.8s ease-out forwards;
-        opacity: 0;
-    }
-
-    @keyframes stadiumLightFade {
-        from {
-            opacity: 0;
-        }
-
-        to {
-            opacity: 1;
-        }
-    }
-
-    /* Simple fade-in animation for text */
-    .animate-blur-opacity-reveal {
-        animation: textFadeIn 0.5s ease-in forwards;
-        animation-delay: 0.3s;
-        opacity: 0;
-        filter: blur(8px);
-    }
-
-    @keyframes textFadeIn {
-        from {
-            opacity: 0;
-            filter: blur(24px);
-        }
-
-        50% {
-            opacity: 0.25;
-            filter: blur(16px);
-        }
-
-        75% {
-            opacity: 0.75;
-            filter: blur(8px);
-        }
-
-        to {
-            opacity: 1;
-            filter: blur(0px);
-        }
-    }
+  }
 }
 
 /* animate opacity reveal */
 .animate-opacity-reveal {
-    animation: opacityReveal 0.5s ease-in forwards;
-    animation-delay: 0.6s;
-    opacity: 0;
+  animation: opacityReveal 0.5s ease-in forwards;
+  animation-delay: 0.6s;
+  opacity: 0;
 }
 
 @keyframes opacityReveal {
-    from {
-        opacity: 0;
-    }
+  from {
+    opacity: 0;
+  }
 
-    50% {
-        opacity: 0.25;
-    }
+  50% {
+    opacity: 0.25;
+  }
 
-    75% {
-        opacity: 0.75;
-    }
+  75% {
+    opacity: 0.75;
+  }
 
-    to {
-        opacity: 1;
-    }
+  to {
+    opacity: 1;
+  }
 }
 
 /* Overlay fade-in animation */
 .animate-overlay-fade-in {
-    animation: overlayFadeIn 0.5s ease-out forwards;
-    opacity: 0;
+  animation: overlayFadeIn 0.5s ease-out forwards;
+  opacity: 0;
 }
 
 @keyframes overlayFadeIn {
-    from {
-        opacity: 0;
-    }
+  from {
+    opacity: 0;
+  }
 
-    to {
-        opacity: 1;
-    }
+  to {
+    opacity: 1;
+  }
 }
 
 /* Overlay fade-out animation */
 .animate-overlay-fade-out {
-    animation: overlayFadeOut 0.5s ease-out forwards;
-    opacity: 1;
+  animation: overlayFadeOut 0.5s ease-out forwards;
+  opacity: 1;
 }
 
 @keyframes overlayFadeOut {
-    from {
-        opacity: 1;
-    }
+  from {
+    opacity: 1;
+  }
 
-    to {
-        opacity: 0;
-    }
+  to {
+    opacity: 0;
+  }
 }
-
 
 /* Social media cards spring animations */
 .animate-social-card-1 {
-    animation: socialCardSpring 0.8s ease-out forwards;
-    animation-delay: 0.8s;
-    transform: translateY(100px);
-    opacity: 0;
+  animation: socialCardSpring 0.8s ease-out forwards;
+  animation-delay: 0.8s;
+  transform: translateY(100px);
+  opacity: 0;
 }
 
 .animate-social-card-2 {
-    animation: socialCardSpring 0.8s ease-out forwards;
-    animation-delay: 1.0s;
-    transform: translateY(100px);
-    opacity: 0;
+  animation: socialCardSpring 0.8s ease-out forwards;
+  animation-delay: 1s;
+  transform: translateY(100px);
+  opacity: 0;
 }
 
 .animate-social-card-3 {
-    animation: socialCardSpring 0.8s ease-out forwards;
-    animation-delay: 1.2s;
-    transform: translateY(100px);
-    opacity: 0;
+  animation: socialCardSpring 0.8s ease-out forwards;
+  animation-delay: 1.2s;
+  transform: translateY(100px);
+  opacity: 0;
 }
 
 .animate-social-card-4 {
-    animation: socialCardSpring 0.8s ease-out forwards;
-    animation-delay: 1.4s;
-    transform: translateY(100px);
-    opacity: 0;
+  animation: socialCardSpring 0.8s ease-out forwards;
+  animation-delay: 1.4s;
+  transform: translateY(100px);
+  opacity: 0;
 }
 
 .animate-social-card-5 {
-    animation: socialCardSpring 0.8s ease-out forwards;
-    animation-delay: 1.6s;
-    transform: translateY(100px);
-    opacity: 0;
+  animation: socialCardSpring 0.8s ease-out forwards;
+  animation-delay: 1.6s;
+  transform: translateY(100px);
+  opacity: 0;
 }
 
 @keyframes socialCardSpring {
-    from {
-        transform: translateY(100px);
-        opacity: 0;
-    }
+  from {
+    transform: translateY(100px);
+    opacity: 0;
+  }
 
-    60% {
-        transform: translateY(-10px);
-        opacity: 1;
-    }
+  60% {
+    transform: translateY(-10px);
+    opacity: 1;
+  }
 
-    80% {
-        transform: translateY(5px);
-    }
+  80% {
+    transform: translateY(5px);
+  }
 
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 /* Continuous rotation animation for Post Rotating SVG */
 .animate-rotate-continuous {
-    animation: rotateContinuous 4s linear infinite;
+  animation: rotateContinuous 4s linear infinite;
 }
 
 @keyframes rotateContinuous {
-    from {
-        transform: rotate(0deg);
-    }
+  from {
+    transform: rotate(0deg);
+  }
 
-    to {
-        transform: rotate(360deg);
-    }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Fast spin animation for loader */
+@keyframes spin-fast {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-fast {
+  animation: spin-fast 0.7s linear infinite;
+}
+
+/* Text reveal animation - character by character */
+.text-reveal-wrapper {
+  display: inline-block;
+}
+
+.text-reveal-char {
+  display: inline-block;
+  clip-path: inset(100% 0 0 0);
+  animation: textRevealChar 0.6s ease-out forwards;
+}
+
+@keyframes textRevealChar {
+  from {
+    clip-path: inset(100% 0 0 0);
+  }
+
+  to {
+    clip-path: inset(0 0 0 0);
+  }
 }
 
 /* Avatar container scale and rotate animation */
 .animate-avatar-container-scale {
-    animation: avatarContainerScaleRotate 0.8s ease-out forwards;
-    animation-delay: 1.3s;
-    transform: scale(0) rotate(0deg);
+  animation: avatarContainerScaleRotate 0.8s ease-out forwards;
+  animation-delay: 1.3s;
+  transform: scale(0) rotate(0deg);
 }
 
 @keyframes avatarContainerScaleRotate {
-    from {
-        transform: scale(0) rotate(0deg);
-        opacity: 0;
+  from {
+    transform: scale(0) rotate(0deg);
+    opacity: 0;
+  }
 
-    }
-
-    to {
-        transform: scale(1) rotate(-360deg);
-        opacity: 1;
-    }
+  to {
+    transform: scale(1) rotate(-360deg);
+    opacity: 1;
+  }
 }
 
 /* Pill slide-in animation */
 .animate-pill-slide-in {
-    animation: pillSlideIn 0.5s ease-out forwards;
-    animation-delay: 2.0s;
-    transform: translateY(100px);
-    opacity: 0;
-    filter: blur(8px);
+  animation: pillSlideIn 0.5s ease-out forwards;
+  animation-delay: 2s;
+  transform: translateY(100px);
+  opacity: 0;
+  filter: blur(8px);
 }
 
 @keyframes pillSlideIn {
-    from {
-        transform: translateY(100px);
-        opacity: 0;
-        filter: blur(8px);
-    }
+  from {
+    transform: translateY(100px);
+    opacity: 0;
+    filter: blur(8px);
+  }
 
-    50% {
-        filter: blur(4px);
-        opacity: 0.5;
-    }
+  50% {
+    filter: blur(4px);
+    opacity: 0.5;
+  }
 
-    to {
-        transform: translateY(0);
-        opacity: 1;
-        filter: blur(0px);
-    }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+    filter: blur(0px);
+  }
 }
 
 /* Orange pill slide-down animation */
 .animate-orange-pill-slide-down {
-    animation: orangePillSlideDown 0.5s ease-out forwards;
-    animation-delay: 2.6s;
-    transform: translateY(-50px);
-    opacity: 0;
+  animation: orangePillSlideDown 0.5s ease-out forwards;
+  animation-delay: 2.6s;
+  transform: translateY(-50px);
+  opacity: 0;
 }
 
 @keyframes orangePillSlideDown {
-    from {
-        transform: translateY(-50px);
-        opacity: 0;
-    }
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
 
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 /* Chevron oscillating animation */
 .animate-chevron-oscillate {
-    animation: chevronOscillate 1.5s ease-in-out infinite;
-    animation-delay: 3.0s;
+  animation: chevronOscillate 1.5s ease-in-out infinite;
+  animation-delay: 3s;
 }
 
 @keyframes chevronOscillate {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
 
-    0%,
-    100% {
-        transform: translateY(0);
-    }
-
-    50% {
-        transform: translateY(4px);
-    }
+  50% {
+    transform: translateY(4px);
+  }
 }

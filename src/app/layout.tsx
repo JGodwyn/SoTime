@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import '@/src/styles/globals.css'
-import { Navigation } from '@/src/components/navigation'
+import { ConditionalNavigation } from '@/src/components/conditional-navigation'
 import { OverlayProvider } from '@/src/components/overlay/overlay-provider'
 
 export const metadata: Metadata = {
@@ -17,7 +17,7 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <OverlayProvider>
-          <Navigation />
+          <ConditionalNavigation />
           {children}
         </OverlayProvider>
       </body>

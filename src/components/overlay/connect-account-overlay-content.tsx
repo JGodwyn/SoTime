@@ -2,10 +2,17 @@
 
 import { Button } from "@/src/components/ui/button"
 import { useOverlay } from "@/src/components/overlay/overlay-provider"
-import { cn } from "@/lib/utils"
+import { useState } from "react"
 
 export function ConnectAccountOverlayContent() {
   const { closeOverlay } = useOverlay()
+  const [isConnecting, setIsConnecting] = useState(false)
+
+  const handleConnectX = () => {
+    setIsConnecting(true)
+    // Redirect to OAuth initiation endpoint
+    window.location.href = '/api/auth/x'
+  }
 
   return (
     <div className="relative z-10 w-full max-w-sm rounded-3xl p-8 text-left">
@@ -39,13 +46,11 @@ export function ConnectAccountOverlayContent() {
         <Button
           type="button"
           size="lg"
+          disabled={isConnecting}
           // className="text-btn-lg uppercase tracking-wide"
-          onClick={() => {
-            // TODO: Implement X account connection
-            console.log("Connect X account clicked")
-          }}
+          onClick={handleConnectX}
         >
-          CONNECT X ACCOUNT
+          {isConnecting ? 'CONNECTING...' : 'CONNECT X ACCOUNT'}
         </Button>
 
         {/* Close Button - White */}
