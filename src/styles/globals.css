@@ -668,17 +668,35 @@
 
 .text-reveal-char {
   display: inline-block;
-  clip-path: inset(100% 0 0 0);
+  clip-path: inset(100% -12px 0 -12px);
+  transform: translateY(100px);
+  opacity: 0;
+  filter: blur(16px);
   animation: textRevealChar 0.6s ease-out forwards;
+}
+
+.text-reveal-paused {
+  animation-play-state: paused;
 }
 
 @keyframes textRevealChar {
   from {
-    clip-path: inset(100% 0 0 0);
+    clip-path: inset(100% -12px 0 -12px);
+    transform: translateY(80px);
+    opacity: 0;
+    filter: blur(16px);
+  }
+
+  50% {
+    opacity: 0.3;
+    filter: blur(8px);
   }
 
   to {
-    clip-path: inset(0 0 0 0);
+    clip-path: inset(0 -12px 0 -12px);
+    transform: translateY(0);
+    opacity: 1;
+    filter: blur(0px);
   }
 }
 

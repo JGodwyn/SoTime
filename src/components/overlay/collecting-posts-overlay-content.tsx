@@ -10,30 +10,36 @@ export function CollectingPostsOverlayContent() {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    // Trigger animation when component mounts
-    setIsVisible(true);
+    // Trigger animation after 1 second delay
+    const timer = setTimeout(() => {
+      setIsVisible(true);
+    }, 1000);
+
+    return () => clearTimeout(timer);
   }, []);
 
   const text = 'COLLECTING YOUR POSTS';
-  const words = text.split(' ');
+  const words = text.split(' ').filter((word) => word.trim() !== '');
 
   return (
     <div className="relative z-10 w-80 max-w-sm rounded-3xl p-8 text-left">
-      <div className="flex flex-col items-center text-center space-y-6">
-        {/* Loader */}
-        <div className="flex justify-center mb-2">
-          <Loader />
-        </div>
-
+      {/* Fixed height container to prevent layout shifts */}
+      <div className="h-[200px] flex flex-col items-center justify-center relative">
         {/* Title */}
-        <h2 className="text-heading-lg text-white uppercase tracking-wide">
+        <h2 className="text-heading-lg text-white uppercase tracking-wide min-h-[60px] flex items-center justify-center">
           <span className="text-reveal-wrapper">
             {words.map((word, index) => (
               <span
                 key={index}
-                className="text-reveal-char"
+                className={isVisible ? 'text-reveal-char' : ''}
                 style={{
                   animationDelay: isVisible ? `${index * 0.15}s` : '0s',
+                  ...(!isVisible && {
+                    clipPath: 'inset(100% -12px 0 -12px)',
+                    transform: 'translateY(100px)',
+                    opacity: 0,
+                    filter: 'blur(16px)',
+                  }),
                 }}
               >
                 {word}
@@ -43,18 +49,23 @@ export function CollectingPostsOverlayContent() {
           </span>
         </h2>
 
-        {/* Close Button */}
-        <div className="flex flex-col items-center gap-4 w-full mt-4">
-          <Button
-            type="button"
-            size="lg"
-            variant="secondary"
-            onClick={closeOverlay}
-          >
-            CLOSE
-          </Button>
+        {/* Loader - absolutely positioned within fixed height container */}
+        <div className="absolute top-[calc(160px+1.5rem)] -translate-x-1/2 flex justify-center">
+          <Loader />
         </div>
       </div>
+
+      {/* Close Button */}
+      {/* <div className="flex flex-col items-center gap-4 w-full mt-4">
+        <Button
+          type="button"
+          size="lg"
+          variant="secondary"
+          onClick={closeOverlay}
+        >
+          CLOSE
+        </Button>
+      </div> */}
     </div>
   );
 }
