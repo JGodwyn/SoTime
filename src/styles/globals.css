@@ -675,6 +675,23 @@
   animation: textRevealChar 0.6s ease-out forwards;
 }
 
+.text-reveal-char-exit {
+  display: inline-block;
+  clip-path: inset(0 -12px 0 -12px);
+  transform: translateY(0);
+  opacity: 1;
+  filter: blur(0);
+  animation: textRevealChar 0.6s ease-out reverse forwards;
+}
+
+.text-reveal-char-hidden {
+  display: inline-block;
+  clip-path: inset(100% -12px 0 -12px);
+  transform: translateY(100px);
+  opacity: 0;
+  filter: blur(16px);
+}
+
 .text-reveal-paused {
   animation-play-state: paused;
 }

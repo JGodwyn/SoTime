@@ -52,6 +52,8 @@ export default function Homepage() {
       const timer = setTimeout(() => {
         openOverlay({
           content: <CollectingPostsOverlayContent />,
+          closeOnBackdrop: false,
+          closeOnEscape: false,
         });
       }, 1000);
 
