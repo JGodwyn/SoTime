@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Phudu:wght@400;500;600&family=Mozilla+Headline:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Phudu:wght@400;500;600&family=Mozilla+Headline:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -233,14 +233,20 @@
 
   body {
     @apply bg-background text-foreground;
-    font-family: 'Mozilla Headline', 'Inter', -apple-system, BlinkMacSystemFont,
-      'Segoe UI', Roboto, sans-serif;
+    font-family:
+      "Mozilla Headline",
+      "Inter",
+      -apple-system,
+      BlinkMacSystemFont,
+      "Segoe UI",
+      Roboto,
+      sans-serif;
   }
 
   /* Typography utility classes */
   .text-display-3xl {
     font-size: var(--display-3xl);
-    font-family: 'Phudu', sans-serif;
+    font-family: "Phudu", sans-serif;
     font-weight: 600;
     line-height: 118px;
     letter-spacing: 0px;
@@ -248,7 +254,7 @@
 
   .text-display-2xl {
     font-size: var(--display-2xl);
-    font-family: 'Phudu', sans-serif;
+    font-family: "Phudu", sans-serif;
     font-weight: 600;
     line-height: 108px;
     letter-spacing: 0px;
@@ -256,7 +262,7 @@
 
   .text-display-xl {
     font-size: var(--display-xl);
-    font-family: 'Phudu', sans-serif;
+    font-family: "Phudu", sans-serif;
     font-weight: 600;
     line-height: 96px;
     letter-spacing: 0px;
@@ -264,7 +270,7 @@
 
   .text-display-lg {
     font-size: var(--display-lg);
-    font-family: 'Phudu', sans-serif;
+    font-family: "Phudu", sans-serif;
     font-weight: 600;
     line-height: 88px;
     letter-spacing: 0px;
@@ -272,7 +278,7 @@
 
   .text-display-md {
     font-size: var(--display-md);
-    font-family: 'Phudu', sans-serif;
+    font-family: "Phudu", sans-serif;
     font-weight: 600;
     line-height: 72px;
     letter-spacing: 0px;
@@ -280,7 +286,7 @@
 
   .text-display-sm {
     font-size: var(--display-sm);
-    font-family: 'Phudu', sans-serif;
+    font-family: "Phudu", sans-serif;
     font-weight: 600;
     line-height: 56px;
     letter-spacing: 0px;
@@ -288,7 +294,7 @@
 
   .text-heading-lg {
     font-size: var(--heading-lg);
-    font-family: 'Phudu', sans-serif;
+    font-family: "Phudu", sans-serif;
     font-weight: 600;
     line-height: 48px;
     letter-spacing: 0px;
@@ -296,7 +302,7 @@
 
   .text-heading-md {
     font-size: var(--heading-md);
-    font-family: 'Phudu', sans-serif;
+    font-family: "Phudu", sans-serif;
     font-weight: 600;
     line-height: 40px;
     letter-spacing: 0px;
@@ -304,7 +310,7 @@
 
   .text-heading-sm {
     font-size: var(--heading-sm);
-    font-family: 'Phudu', sans-serif;
+    font-family: "Phudu", sans-serif;
     font-weight: 600;
     line-height: 32px;
     letter-spacing: 0px;
@@ -312,7 +318,7 @@
 
   .text-title-lg {
     font-size: var(--title-lg);
-    font-family: 'Phudu', sans-serif;
+    font-family: "Phudu", sans-serif;
     font-weight: 600;
     line-height: 28px;
     letter-spacing: 0px;
@@ -320,7 +326,7 @@
 
   .text-title-md {
     font-size: var(--title-md);
-    font-family: 'Phudu', sans-serif;
+    font-family: "Phudu", sans-serif;
     font-weight: 600;
     line-height: 24px;
     letter-spacing: 0px;
@@ -328,7 +334,7 @@
 
   .text-title-sm {
     font-size: var(--title-sm);
-    font-family: 'Phudu', sans-serif;
+    font-family: "Phudu", sans-serif;
     font-weight: 600;
     line-height: 20px;
     letter-spacing: 0px;
@@ -336,7 +342,7 @@
 
   .text-body-lg {
     font-size: var(--body-lg);
-    font-family: 'Mozilla Headline', sans-serif;
+    font-family: "Mozilla Headline", sans-serif;
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 0px;
@@ -344,7 +350,7 @@
 
   .text-body-lg-bold {
     font-size: var(--body-lg-bold);
-    font-family: 'Mozilla Headline', sans-serif;
+    font-family: "Mozilla Headline", sans-serif;
     font-weight: 600;
     line-height: 24px;
     letter-spacing: 0px;
@@ -352,7 +358,7 @@
 
   .text-body-md {
     font-size: var(--body-md);
-    font-family: 'Mozilla Headline', sans-serif;
+    font-family: "Mozilla Headline", sans-serif;
     font-weight: 400;
     line-height: 20px;
     letter-spacing: 0px;
@@ -360,7 +366,7 @@
 
   .text-body-md-bold {
     font-size: var(--body-md-bold);
-    font-family: 'Mozilla Headline', sans-serif;
+    font-family: "Mozilla Headline", sans-serif;
     font-weight: 600;
     line-height: 20px;
     letter-spacing: 0px;
@@ -368,7 +374,7 @@
 
   .text-body-sm {
     font-size: var(--body-sm);
-    font-family: 'Mozilla Headline', sans-serif;
+    font-family: "Mozilla Headline", sans-serif;
     font-weight: 400;
     line-height: 12px;
     letter-spacing: 0px;
@@ -376,7 +382,7 @@
 
   .text-body-sm-bold {
     font-size: var(--body-sm-bold);
-    font-family: 'Mozilla Headline', sans-serif;
+    font-family: "Mozilla Headline", sans-serif;
     font-weight: 500;
     line-height: 12px;
     letter-spacing: 0px;
@@ -384,7 +390,7 @@
 
   .text-btn-lg {
     font-size: var(--btn-lg);
-    font-family: 'Phudu', sans-serif;
+    font-family: "Phudu", sans-serif;
     font-weight: 500;
     line-height: 20px;
     letter-spacing: 16px;
@@ -392,7 +398,7 @@
 
   .text-btn-sm {
     font-size: var(--btn-sm);
-    font-family: 'Phudu', sans-serif;
+    font-family: "Phudu", sans-serif;
     font-weight: 500;
     line-height: 16px;
     letter-spacing: 0px;
@@ -400,7 +406,7 @@
 
   .text-link {
     font-size: var(--link);
-    font-family: 'Mozilla Headline', sans-serif;
+    font-family: "Mozilla Headline", sans-serif;
     font-weight: 400;
     line-height: 20px;
     letter-spacing: 0px;
@@ -408,7 +414,7 @@
 
   .text-sublines {
     font-size: var(--sublines);
-    font-family: 'Phudu', sans-serif;
+    font-family: "Phudu", sans-serif;
     font-weight: 600;
     line-height: 12px;
     letter-spacing: 0px;
@@ -668,25 +674,36 @@
 
 .text-reveal-char {
   display: inline-block;
-  clip-path: inset(100% -12px 0 -12px);
   transform: translateY(100px);
   opacity: 0;
   filter: blur(16px);
-  animation: textRevealChar 0.6s ease-out forwards;
+  animation: textRevealChar 0.6s ease-in-out forwards;
 }
 
 .text-reveal-char-exit {
   display: inline-block;
-  clip-path: inset(0 -12px 0 -12px);
   transform: translateY(0);
   opacity: 1;
   filter: blur(0);
-  animation: textRevealChar 0.6s ease-out reverse forwards;
+  animation: textExitChar 0.25s ease-out forwards;
+}
+
+@keyframes textExitChar {
+  from {
+    transform: translateY(0);
+    opacity: 1;
+    filter: blur(0px);
+  }
+
+  to {
+    transform: translateY(80px);
+    opacity: 0;
+    filter: blur(16px);
+  }
 }
 
 .text-reveal-char-hidden {
   display: inline-block;
-  clip-path: inset(100% -12px 0 -12px);
   transform: translateY(100px);
   opacity: 0;
   filter: blur(16px);
@@ -698,19 +715,12 @@
 
 @keyframes textRevealChar {
   from {
-    clip-path: inset(100% -12px 0 -12px);
     transform: translateY(80px);
     opacity: 0;
     filter: blur(16px);
   }
 
-  50% {
-    opacity: 0.3;
-    filter: blur(8px);
-  }
-
   to {
-    clip-path: inset(0 -12px 0 -12px);
     transform: translateY(0);
     opacity: 1;
     filter: blur(0px);
